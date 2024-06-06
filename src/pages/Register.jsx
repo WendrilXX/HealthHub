@@ -7,7 +7,7 @@ import { FaEyeSlash } from "react-icons/fa6";
 
 
 
-const Login = () => {
+const Register = () => {
   const [ showPassword, setShowPassword ] = useState(false);
 
 
@@ -62,4 +62,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
