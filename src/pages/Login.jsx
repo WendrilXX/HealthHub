@@ -44,10 +44,10 @@ const Login = () => {
                 </a>
               </div>
               <div className="login-center-buttons">
-                <button type="button">Log In</button>
+                <button type="button">Login</button>
                 <button type="button">
                   <img src={GoogleSvg} alt="" />
-                  entrar com Google
+                  Login com Google
                 </button>
               </div>
             </form>
