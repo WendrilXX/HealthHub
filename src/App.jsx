@@ -1,10 +1,12 @@
-import Login from "./pages/Login"
+import { Widget } from "./components/Widget";
 
-
-function App() {
+export function App() {
   return (
-    <Login />
+    <div>
+        <Widget />
+    </div>
+
   )
 }
 
-export default App
+export default App ;

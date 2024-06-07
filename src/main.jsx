@@ -1,11 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import "./responsive.css";
-import RoutesApp from './routes/router.jsx';
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { App } from "./App";
+import RoutesApp from "./routes/router";
+import "./global.css";
+import "./index.css";
+// alora
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-   <RoutesApp/>   {/*  é quem cotrola as rotas de acrodo em que url o usuario esta */}
+    <App />
+    <RoutesApp/>
   </React.StrictMode>,
-)
+);

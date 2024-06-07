@@ -1,9 +1,9 @@
 import { Fragment } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import useAuth  from "../hooks/useAuth"
+// import useAuth  from "../hooks/useAuth"
 import Login from "../pages/Login";             ///Página de Login
 import Register from "../pages/Register";             ///Página de Login
-import Home from "../pages/Home";
+import App from "../App";
 
 
 //  isso aqui chama a função de autenticaç]ao do usuario 
@@ -23,7 +23,7 @@ const RoutesApp = () => {
       <Fragment>
         <Routes>
           {/* <Route path="/home" element={<Private Item={App} />} /> */}
-          <Route path="/home" element={<Home/>} />
+          <Route path="/home" element={<App/>} />
           <Route path="/" element={<Login />} />
           <Route path="*" element={<Login />} />   
           <Route path="/register" element={<Register />} />
