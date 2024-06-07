@@ -5,8 +5,8 @@ import GoogleSvg from "../assets/icons8-google.svg";
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa6";
 
-
-
+// Antes que falem mau! estou com sono! clonei a pagian de login, ai vc modifiquem e criem a pagina de registro 
+//  se tiver um código muito doido, não se preocupem!, a musica que eu to ouvindo é mais louca KKKKk enfim..... vou escrever meu artigo fui
 const Register = () => {
   const [ showPassword, setShowPassword ] = useState(false);
 
@@ -22,8 +22,8 @@ const Register = () => {
             <img src={Logo} alt="" />
           </div>
           <div className="login-center">
-            <h2>Seja bem Vindo(a)</h2>
-            <p>Please enter your details</p>
+            <h2>Registro</h2>
+            <p>É um pazer ter vc por aqui</p>
             <form>
               <input type="email" placeholder="Email" />
               <div className="pass-input-div">
