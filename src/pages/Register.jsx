@@ -23,7 +23,7 @@ const Register = () => {
           </div>
           <div className="login-center">
             <h2>Registro</h2>
-            <p>É um pazer ter vc por aqui</p>
+            <p>É um prazer ter vc por aqui</p>
             <form>
               <input type="email" placeholder="Email" />
               <div className="pass-input-div">
@@ -36,25 +36,25 @@ const Register = () => {
                 <div className="remember-div">
                   <input type="checkbox" id="remember-checkbox" />
                   <label htmlFor="remember-checkbox">
-                    Remember for 30 days
+                    Lembrar por 30 dias
                   </label>
                 </div>
                 <a href="#" className="forgot-pass-link">
-                  Forgot password?
+                  Esqueceu a senha?
                 </a>
               </div>
               <div className="login-center-buttons">
                 <button type="button">Log In</button>
                 <button type="button">
                   <img src={GoogleSvg} alt="" />
-                  Log In with Google
+                  Entrar com o Google
                 </button>
               </div>
             </form>
           </div>
 
           <p className="login-bottom-p">
-            Don't have an account? <a href="#">Sign Up</a>
+            Não tem conta? <a href="#">Sign Up</a>
           </p>
         </div>
       </div>
