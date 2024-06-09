@@ -44,7 +44,7 @@ const Register = () => {
                 </a>
               </div>
               <div className="login-center-buttons">
-                <button type="button">Log In</button>
+                <button type="button">Login</button>
                 <button type="button">
                   <img src={GoogleSvg} alt="" />
                   Entrar com o Google
@@ -54,7 +54,7 @@ const Register = () => {
           </div>
 
           <p className="login-bottom-p">
-            Não tem conta? <a href="#">Sign Up</a>
+            Não tem conta? <a href="#">Registra-se</a>
           </p>
         </div>
       </div>
