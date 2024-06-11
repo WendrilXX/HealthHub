@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "../pages/Login";             ///Página de Login
 import Register from "../pages/Register";             ///Página de Login
 import App from "../App";
+import Forum from "../pages/Forum"; ///Página de Forum"
 
 
 //  isso aqui chama a função de autenticaç]ao do usuario 
@@ -27,6 +28,7 @@ const RoutesApp = () => {
           <Route path="/" element={<Login />} />
           <Route path="*" element={<Login />} />   
           <Route path="/register" element={<Register />} />
+          <Route path="Forum" element={<Forum />} />  
         </Routes>
       </Fragment>
     </BrowserRouter>
