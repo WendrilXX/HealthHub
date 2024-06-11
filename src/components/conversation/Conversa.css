@@ -1,0 +1,53 @@
+/* Adicionando padding ao redor do container das conversas */
+.conversas-container {
+    padding: 20px;
+  }
+  
+  /* Estilos para a foto do perfil */
+  .photo {
+    height: 40px;
+    width: 40px;
+    border: 2px solid green;
+    position: relative;
+  }
+  
+  /* Estilos para o campo que contém o nome do perfil e a foto */
+  .perfil_photoName {
+    display: flex;
+    align-items: center; /* Alinhar verticalmente o conteúdo */
+  }
+  
+  /* Estilos para o nome do perfil */
+  .nomeperfil {
+    margin-left: 10px; /* Adicionando margem à esquerda para separar do ícone de foto */
+  }
+  
+  /* Estilos para a caixa de conversa */
+  .Box-conversa {
+    margin-bottom: 20px; /* Adicionando margem inferior para separar as conversas */
+    padding: 15px; /* Adicionando padding para espaço interno */
+    border: 1px solid #ccc; /* Adicionando borda */
+  }
+  
+  /* Estilos para a seção de botões */
+  .botoes {
+    height: 70px; /* Definindo altura para a seção de botões */
+    border: 2px solid red; /* Adicionando borda */
+    display: flex; /* Configurando para usar flexbox */
+    align-items: center; /* Alinhar verticalmente o conteúdo */
+  }
+  
+  /* Estilos para o botão de resposta */
+  .responder {
+    background-color: blue; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 8px 12px; /* Espaçamento interno do botão */
+    border-radius: 4px; /* Adicionando bordas arredondadas */
+    cursor: pointer; /* Mudando o cursor ao passar sobre o botão */
+  }
+  
+  /* Estilos para o botão de resposta quando o mouse está sobre ele */
+  .responder:hover {
+    background-color: darkblue; /* Alterando a cor de fundo ao passar o mouse */
+  }
+  
