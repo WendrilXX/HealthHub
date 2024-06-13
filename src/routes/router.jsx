@@ -4,6 +4,7 @@ import Login from "../pages/Login/Login";             ///Página de Login
 import Register from "../pages/Register/Register";             ///Página de Login
 import App from "../App";
 import Forum from "../pages/Forum/Forum"; ///Página de Forum"
+import Recursos from "../pages/Recursos/index"
 
 
 //  isso aqui chama a função de autenticaç]ao do usuario 
@@ -24,7 +25,7 @@ const RoutesApp = () => {
           {/* <Route path="/home" element={<Private Item={App} />} /> */}
           <Route path="/home" exact element={<App/>} />
           <Route path="/" exact element={<Login />} />
-          <Route path="*" exact element={<Login />} />   
+          <Route path="/recursos" exact element={<Recursos/>}/>  
           <Route path="/register" exact element={<Register />} />
           <Route path="/forum" exact element={<Forum />} />  
         </Routes>
