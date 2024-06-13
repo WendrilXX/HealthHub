@@ -1,7 +1,8 @@
 /* Adicionando padding ao redor do container das conversas */
 .conversas-container {
     padding: 20px;
-  }
+    background-color: #f0f0f0; /* Cor de fundo neutra */
+ }
   
   /* Estilos para a foto do perfil */
   .photo {
@@ -9,6 +10,7 @@
     width: 40px;
     border: 2px solid green;
     position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionando sombra */
   }
   
   /* Estilos para o campo que contém o nome do perfil e a foto */
@@ -19,7 +21,9 @@
   
   /* Estilos para o nome do perfil */
   .nomeperfil {
-    margin-left: 10px; /* Adicionando margem à esquerda para separar do ícone de foto */
+    margin-left: 10px;
+    font-family: Arial, sans-serif; /* Fonte mais moderna */
+    color: #333; /* Texto escuro para contraste */
   }
   
   /* Estilos para a caixa de conversa */
@@ -27,27 +31,42 @@
     margin-bottom: 20px; /* Adicionando margem inferior para separar as conversas */
     padding: 15px; /* Adicionando padding para espaço interno */
     border: 1px solid #ccc; /* Adicionando borda */
+    transition: all 0.3s ease; /* Efeito de hover suave */
+  }
+  
+  .Box-conversa:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
   }
   
   /* Estilos para a seção de botões */
   .botoes {
     height: 70px; /* Definindo altura para a seção de botões */
-    border: 2px solid red; /* Adicionando borda */
+    border: 2px solid transparent; /* Bordas transparentes */
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Distribuindo os botões igualmente */
+    background-color: #eee; /* Fundo cinza claro */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex; /* Configurando para usar flexbox */
     align-items: center; /* Alinhar verticalmente o conteúdo */
   }
   
   /* Estilos para o botão de resposta */
   .responder {
-    background-color: blue; /* Cor de fundo do botão */
+    background-color: #007bff; /* Cor de fundo azul */
     color: white; /* Cor do texto do botão */
-    padding: 8px 12px; /* Espaçamento interno do botão */
+    padding: 6px 10px; /* Reduzindo o espaçamento interno para tornar o botão menor */
     border-radius: 4px; /* Adicionando bordas arredondadas */
     cursor: pointer; /* Mudando o cursor ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Transição suave para o hover */
+    width: auto; /* Ajustando a largura automaticamente baseada no conteúdo */
+    height: auto; /* Ajustando a altura automaticamente baseada no conteúdo */
+    margin-right: 10px; /* Adicionando margem à direita para espaçar entre os botões */
   }
   
   /* Estilos para o botão de resposta quando o mouse está sobre ele */
   .responder:hover {
-    background-color: darkblue; /* Alterando a cor de fundo ao passar o mouse */
+    background-color: #0056b3; /* Cor de fundo mais escuro ao passar o mouse */
   }
   
