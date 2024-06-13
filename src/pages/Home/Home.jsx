@@ -1,4 +1,4 @@
-import Widget from '../components/Widget'
+import Widget from '../../components/Widget'
 
 export function Home() {
     // importar os elementos da pahina inicial
