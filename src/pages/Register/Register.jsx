@@ -1,3 +1,4 @@
+import  './Register.css';
 import React, { useEffect, useState } from "react";
 import Image from "../../assets/image.png";
 import Logo from "../../assets/logo.png";
