@@ -1,10 +1,10 @@
-import { Fragment } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import useAuth  from "../hooks/useAuth"
-import Login from "../pages/Login";             ///Página de Login
-import Register from "../pages/Register";             ///Página de Login
+import Login from "../pages/Login/Login";             ///Página de Login
+import Register from "../pages/Register/Register";             ///Página de Login
 import App from "../App";
-import Forum from "../pages/Forum"; ///Página de Forum"
+import Forum from "../pages/Forum/Forum"; ///Página de Forum"
+import Recursos from "../pages/Recursos/index"
 
 
 //  isso aqui chama a função de autenticaç]ao do usuario 
@@ -20,18 +20,16 @@ import Forum from "../pages/Forum"; ///Página de Forum"
 
 const RoutesApp = () => {
   return (
-    <BrowserRouter>
-      <Fragment>
+    <Router>
         <Routes>
           {/* <Route path="/home" element={<Private Item={App} />} /> */}
-          <Route path="/home" element={<App/>} />
-          <Route path="/" element={<Login />} />
-          <Route path="*" element={<Login />} />   
-          <Route path="/register" element={<Register />} />
-          <Route path="Forum" element={<Forum />} />  
+          <Route path="/home" exact element={<App/>} />
+          <Route path="/" exact element={<Login />} />
+          <Route path="/recursos" exact element={<Recursos/>}/>  
+          <Route path="/register" exact element={<Register />} />
+          <Route path="/forum" exact element={<Forum />} />  
         </Routes>
-      </Fragment>
-    </BrowserRouter>
+    </Router>
   );
 };
 
