@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2, h3, p {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .login-right {
     background: #f1f1f1;
     padding: 20px;
@@ -11,13 +21,15 @@
     margin-right: auto;
     text-align: center;
 }
-input[type="text"], input[type="password"], input[type="email"]  {
+input[type="text"], input[type="password"], input[type="email"] {
     width: 90%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
     border-radius: 100px;
     box-sizing: border-box;
+    border: 1px solid #87CEEB;
+    background-color: #ADD8E6;
+    color: #00008B;
 }
 
 .email-input-div, .pass-input-div {
@@ -48,27 +60,30 @@ input[type="checkbox"] {
     align-items: center;
     margin-top: 20px;
 }
-.login-center-buttons{
+.login-center-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    align-items: center; /* Centraliza os botões verticalmente */
+    gap: 10px; /* Adiciona algum espaço entre os botões */
     align-items: center;
-    margin-top: 20px;
-    
 }
 
 button {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    background-color: #2693f4;
-    color: white;
-    font-size: 14px;
+    background-color: #00008B;
+    color: #ADD8E6;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     cursor: pointer;
 }
-.button-login{
+.button-login {
+    background-color: #007bff; /* Azul mais escuro */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    margin-right: 10px; /* Espaçamento entre botões */
     margin-right: 10px;
 }
 .button-google{
@@ -80,4 +95,19 @@ button {
     width: 20px; 
     height: 20px; 
     object-fit: contain; /* imagem seja redimensionada mantendo suas proporções */
+}
+
+button:hover {
+    background-color: #87CEEB;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajuste conforme necessário */
+}
+
+.button-login:hover {
+    background-color: #0056b3; /* Um tom de azul ainda mais escuro no hover */
 }
