@@ -5,6 +5,7 @@ import Register from "../pages/Register/Register";             ///Página de Log
 import App from "../App";
 import Forum from "../pages/Forum/Forum"; ///Página de Forum"
 import Recursos from "../pages/Recursos/index"
+import Profissional from '../pages/Profissional/Profissional'; // Página de Consulta
 
 
 //  isso aqui chama a função de autenticaç]ao do usuario 
@@ -28,6 +29,7 @@ const RoutesApp = () => {
           <Route path="/recursos" exact element={<Recursos/>}/>  
           <Route path="/register" exact element={<Register />} />
           <Route path="/forum" exact element={<Forum />} />  
+          <Route path="/profissional" exact element={<Profissional />} />
         </Routes>
     </Router>
   );
