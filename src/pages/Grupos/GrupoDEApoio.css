@@ -1,0 +1,50 @@
+.GrupoDeApoio-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.grupos-list {
+  list-style-type: none; /* Remove bullets from list */
+  padding: 0;
+}
+
+.grupo {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.perfil_photoName {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Margin between profile and description */
+}
+
+.photo {
+  height: 40px;
+  width: 40px;
+  border: 2px solid green;
+  border-radius: 50%; /* Make the photo round */
+  margin-right: 10px;
+}
+
+.nomeperfil {
+  margin: 0; /* Remove default margin */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
