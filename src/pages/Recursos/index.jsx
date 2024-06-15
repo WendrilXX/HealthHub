@@ -5,6 +5,7 @@ import { loadPosts } from '../../utils/load-posts';
 import { PostButton } from '../../components/PostButton';
 import { TextInput } from '../../components/TextInput';
 import { loadMorePosts } from '../../utils/load-more-posts';
+import { Widget } from '../../components/Widget';
 
 class Recursos extends Component{
   constructor(props){
@@ -52,6 +53,7 @@ class Recursos extends Component{
 
     return( // O que está dentro do return é jsx, caso você queira usar alguma lógica do js, é necessário usar as {}
       <section className='container'>
+         {<Widget />}
         <div className='search-container'>
           <h1>Search Value:</h1>
           <TextInput type="search" value={searchValue} onChange={this.handleChange}/>

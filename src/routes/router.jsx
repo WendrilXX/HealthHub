@@ -6,6 +6,7 @@ import App from "../App";
 import Forum from "../pages/Forum/Forum"; ///Página de Forum"
 import Recursos from "../pages/Recursos/index"
 import Grupos from "../pages/Grupos/GrupoDEApoio";
+import Consultas_ON from "../pages/Consultas/Consultas";
 
 
 //  isso aqui chama a função de autenticaç]ao do usuario 
@@ -30,6 +31,7 @@ const RoutesApp = () => {
           <Route path="/register" exact element={<Register />} />
           <Route path="/Grupos" exact element={<Grupos />} />
           <Route path="/forum" exact element={<Forum />} />
+          <Route path="/Consultas" exact element={<Consultas_ON />} />
         </Routes>
     </Router>
   );

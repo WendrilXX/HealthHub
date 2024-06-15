@@ -1,4 +1,4 @@
-import Widget from '../../components/Widget'
+import { Widget } from "../../components/Widget";
 
 export function Home() {
     // importar os elementos da pahina inicial
@@ -6,7 +6,7 @@ export function Home() {
     // return <Widget />;
     return (
         <div>
-            {/* <Widget /> */}
+            {<Widget />}
             <span className="text-lg font-bold " >App</span>
         </div>
       )

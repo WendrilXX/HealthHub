@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Importe o Link do react-router-dom
 import "./GrupoDEApoio.css";
+import { Widget } from "../../components/Widget";
 
 function Grupos() {
   const grupos = [
@@ -28,6 +29,7 @@ function Grupos() {
 
   return (
     <div className="GrupoDeApoio-container">
+       {<Widget />}
       <h1>Grupos de Apoio</h1>
       <div className="grupos-list">
         {grupos.map((grupo) => (
