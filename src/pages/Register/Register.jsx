@@ -28,7 +28,6 @@ const Register = () => {
                 {showPassword ? <FaEyeSlash onClick={() => {setShowPassword(!showPassword)}} /> : <FaEye onClick={() => {setShowPassword(!showPassword)}} />}
                 
               </div>
-
               <div className="login-center-options">
                 <div className="remember-div">
                   <input type="checkbox" id="remember-checkbox" />
