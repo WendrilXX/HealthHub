@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #ADD8E6;
 }
 
 h2, h3, p {
@@ -9,7 +10,7 @@ h2, h3, p {
 }
 
 .login-right {
-    background: #f1f1f1;
+    background: #f2f2f2;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -32,16 +33,13 @@ input[type="text"], input[type="password"], input[type="email"] {
     color: #00008B;
 }
 
-.email-input-div, .pass-input-div {
-    background-color: yellow;
-}
 
 .remember-div {
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-top: 10px;
     margin-left:20px;
+    width: 190px;
 }
 input[type="checkbox"] {
     margin-right: 10px;
@@ -50,22 +48,24 @@ input[type="checkbox"] {
 .forgot-pass-link {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    
     display: block;
     text-align: right;
+    width: 150px;
+    
 }
-.login-center-option {
+.login-center-options {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: right;
     margin-top: 20px;
 }
+
 .login-center-buttons {
     display: flex;
     justify-content: center; /* Centraliza os botões horizontalmente */
     align-items: center; /* Centraliza os botões verticalmente */
     gap: 10px; /* Adiciona algum espaço entre os botões */
-    align-items: center;
 }
 
 button {
@@ -76,6 +76,8 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
     cursor: pointer;
+    height: 40px;
+    width: 120px;
 }
 .button-login {
     background-color: #007bff; /* Azul mais escuro */
@@ -85,11 +87,14 @@ button {
     padding: 10px 20px; /* Espaçamento interno */
     margin-right: 10px; /* Espaçamento entre botões */
     margin-right: 10px;
+    
+    
 }
 .button-google{
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 10px 20px;
+    background-color: rgb(249, 62, 62);
 }
 .button-google img {
     width: 20px; 
@@ -110,4 +115,30 @@ button:hover {
 
 .button-login:hover {
     background-color: #0056b3; /* Um tom de azul ainda mais escuro no hover */
+}
+
+.login-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ADD8E6;
+    min-height: 100vh; /* Garante que ocupe pelo menos a altura total da viewport */
+}
+
+.pass-input-div {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 40px; /* Ajuste conforme necessário */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1; /* Certifique-se de que o ícone esteja acima do texto do campo de entrada */
+}
+
+/* Estilize o campo de entrada conforme necessário */
+input[type="password"] {
+    padding-right: 30px; /* Aumenta o tamanho do campo de entrada para acomodar o ícone */
 }
