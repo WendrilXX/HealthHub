@@ -5,6 +5,7 @@ import Register from "../pages/Register/Register";             ///Página de Log
 import App from "../App";
 import Forum from "../pages/Forum/Forum"; ///Página de Forum"
 import Recursos from "../pages/Recursos/index"
+import Profissional from '../pages/Profissional/Profissional'; // Página de Consulta
 import Grupos from "../pages/Grupos/GrupoDEApoio";
 
 
@@ -28,8 +29,9 @@ const RoutesApp = () => {
           <Route path="/" exact element={<Login />} />
           <Route path="/recursos" exact element={<Recursos/>}/>  
           <Route path="/register" exact element={<Register />} />
+          <Route path="/forum" exact element={<Forum />} />  
+          <Route path="/profissional" exact element={<Profissional />} />
           <Route path="/Grupos" exact element={<Grupos />} />
-          <Route path="/forum" exact element={<Forum />} />
         </Routes>
     </Router>
   );

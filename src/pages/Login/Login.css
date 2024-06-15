@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2, h3, p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.login-right {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    border: 1px solid #87CEEB;
+    background-color: #ADD8E6;
+    color: #00008B;
+}
+
+.email-input-div, .pass-input-div {
+    background-color: yellow;
+}
+
+.remember-div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+    margin-left:20px;
+}
+input[type="checkbox"] {
+    margin-right: 10px;
+    justify-content: right;
+}
+.forgot-pass-link {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: block;
+    text-align: right;
+}
+.login-center-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.login-center-buttons {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    align-items: center; /* Centraliza os botões verticalmente */
+    gap: 10px; /* Adiciona algum espaço entre os botões */
+    align-items: center;
+}
+
+button {
+    background-color: #00008B;
+    color: #ADD8E6;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.button-login {
+    background-color: #007bff; /* Azul mais escuro */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    margin-right: 10px; /* Espaçamento entre botões */
+    margin-right: 10px;
+}
+.button-google{
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.button-google img {
+    width: 20px; 
+    height: 20px; 
+    object-fit: contain; /* imagem seja redimensionada mantendo suas proporções */
+}
+
+button:hover {
+    background-color: #87CEEB;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajuste conforme necessário */
+}
+
+.button-login:hover {
+    background-color: #0056b3; /* Um tom de azul ainda mais escuro no hover */
+}

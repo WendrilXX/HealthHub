@@ -1,53 +1,79 @@
 /* Adicionando padding ao redor do container das conversas */
 .conversas-container {
-    padding: 20px;
-  }
-  
-  /* Estilos para a foto do perfil */
-  .photo {
-    height: 40px;
-    width: 40px;
-    border: 2px solid green;
-    position: relative;
-  }
-  
-  /* Estilos para o campo que contém o nome do perfil e a foto */
-  .perfil_photoName {
-    display: flex;
-    align-items: center; /* Alinhar verticalmente o conteúdo */
-  }
-  
-  /* Estilos para o nome do perfil */
-  .nomeperfil {
-    margin-left: 10px; /* Adicionando margem à esquerda para separar do ícone de foto */
-  }
-  
-  /* Estilos para a caixa de conversa */
-  .Box-conversa {
-    margin-bottom: 20px; /* Adicionando margem inferior para separar as conversas */
-    padding: 15px; /* Adicionando padding para espaço interno */
-    border: 1px solid #ccc; /* Adicionando borda */
-  }
-  
-  /* Estilos para a seção de botões */
-  .botoes {
-    height: 70px; /* Definindo altura para a seção de botões */
-    border: 2px solid red; /* Adicionando borda */
-    display: flex; /* Configurando para usar flexbox */
-    align-items: center; /* Alinhar verticalmente o conteúdo */
-  }
-  
-  /* Estilos para o botão de resposta */
-  .responder {
-    background-color: blue; /* Cor de fundo do botão */
-    color: white; /* Cor do texto do botão */
-    padding: 8px 12px; /* Espaçamento interno do botão */
-    border-radius: 4px; /* Adicionando bordas arredondadas */
-    cursor: pointer; /* Mudando o cursor ao passar sobre o botão */
-  }
-  
-  /* Estilos para o botão de resposta quando o mouse está sobre ele */
-  .responder:hover {
-    background-color: darkblue; /* Alterando a cor de fundo ao passar o mouse */
-  }
-  
+  padding: 25px;
+  background-color: #f0f0f0; /* Cor de fundo neutra */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para a foto do perfil */
+.photo {
+  height: 50px;
+  width: 50px;
+  border: 2px solid #007bff; /* Alterando a cor da borda para azul */
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Suavizando a sombra */
+}
+
+/* Estilos para o campo que contém o nome do perfil e a foto */
+.perfil_photoName {
+  display: flex;
+  align-items: center; /* Alinhar verticalmente o conteúdo */
+}
+
+/* Estilos para o nome do perfil */
+.nomeperfil {
+  margin-left: 10px;
+  font-family: 'Arial', sans-serif; /* Mantendo a fonte moderna */
+  color: #666; /* Ajustando a cor do texto para melhor legibilidade */
+  font-size: 14px; /* Aumentando o tamanho da fonte para melhorar a legibilidade */
+}
+
+/* Estilos para a caixa de conversa */
+.Box-conversa {
+  width: 60%;
+  margin-bottom: 30px; /* Aumentando a margem inferior para mais espaço */
+  padding: 20px; /* Aumentando o padding para mais espaço interno */
+  border: 1px solid #ddd; /* Alterando a cor da borda para um cinza mais claro */
+  transition: all 0.25s ease; /* Ajustando a duração da transição */
+}
+
+.Box-conversa:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Suavizando a sombra ao passar o mouse */
+}
+
+/* Estilos para a seção de botões */
+.botoes {
+  width: 100%;
+  height: auto; /* Permite que a altura se ajuste ao conteúdo */
+  border: 2px solid transparent; /* Bordas transparentes */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Posiciona o textarea mais à esquerda */
+  background-color: #e0e0e0; /* Cor de fundo cinza claro */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 7px; /* Espaçamento interno para o textarea */
+}
+
+/* Estilos para o botão de resposta */
+.responder {
+  resize: none; /* Impede o redimensionamento */
+  width: 100%; /* Largura relativa ao container pai */
+  border: none; /* Remove a borda */
+  outline: none; /* Remove o contorno de foco */
+  padding: 10px; /* Preenchimento interno */
+  border-radius: 4px; /* Bordas arredondadas */
+  box-sizing: border-box; /* Garante que o preenchimento não afeta o tamanho geral */
+  padding-left: 10px; /* Ajuste esse valor conforme necessário */
+}
+
+.responder:hover {
+  background-color: #004da0; /* Cor de fundo mais escuro ao passar o mouse */
+}
+
+.responder::placeholder {
+  color: #999; /* Texto do placeholder em uma cor mais clara */
+}
