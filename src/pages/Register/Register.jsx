@@ -12,7 +12,6 @@ const Register = () => {
 
   return (
     <div className="login-main">
-
       <div className="login-right">
         <div className="login-right-container">
           <div className="login-logo">
@@ -24,9 +23,10 @@ const Register = () => {
             <form>
               <input type="email" placeholder="Email" />
               <div className="pass-input-div">
-                <input type={showPassword ? "text" : "password"} placeholder="Password" />
-                {showPassword ? <FaEyeSlash onClick={() => {setShowPassword(!showPassword)}} /> : <FaEye onClick={() => {setShowPassword(!showPassword)}} />}
-                
+                <input type={showPassword? "text" : "password"} placeholder="Password" />
+                <span className="toggle-password" onClick={() => setShowPassword(!showPassword)}>
+                    {showPassword? <FaEyeSlash /> : <FaEye />}
+                </span>
               </div>
               <div className="login-center-options">
                 <div className="remember-div">
@@ -40,9 +40,9 @@ const Register = () => {
                 </a>
               </div>
               <div className="login-center-buttons">
-                <button type="button">Login</button>
-                <button type="button">
-                  Entrar com o Google
+                <button type="button" className='button-login'>Login</button>
+                <button type="button" className='button-google'>
+                  G+ Google
                 </button>
               </div>
             </form>

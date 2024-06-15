@@ -96,11 +96,6 @@ button {
     padding: 10px 20px;
     background-color: rgb(249, 62, 62);
 }
-.button-google img {
-    width: 20px; 
-    height: 20px; 
-    object-fit: contain; /* imagem seja redimensionada mantendo suas proporções */
-}
 
 button:hover {
     background-color: #87CEEB;

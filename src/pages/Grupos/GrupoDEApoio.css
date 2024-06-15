@@ -17,6 +17,23 @@
   border: 1px solid #ccc;
 }
 
+.element-gp{
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+}
+
+.descricao{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+link {
+  align-items: right;
+  display: flex;
+}
+
 .perfil_photoName {
   display: flex;
   align-items: center;
@@ -48,3 +65,5 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+
