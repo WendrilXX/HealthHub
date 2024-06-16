@@ -42,10 +42,12 @@ const Login = () => {
                 </Link>
               </div>
               <div className="login-center-buttons">
-                <button type="button" className='button-login'>Login</button>
-                <button type="button" className='button-google'>
-                  G+ Google
-                </button>
+                <Link to="/home">
+                  <button type="button" className='button-login'>Login</button>
+                </Link>
+                <Link to="/home">
+                  <button type="button" className='button-google'>G+ Google</button>
+                </Link>
               </div>
             </form>
           </div>

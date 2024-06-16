@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Logo from "../../assets/autismo.png";
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 // Antes que falem mau! estou com sono! clonei a pagian de login, ai vc modifiquem e criem a pagina de registro 
 //  se tiver um código muito doido, não se preocupem!, a musica que eu to ouvindo é mais louca KKKKk enfim..... vou escrever meu artigo fui
@@ -37,7 +38,7 @@ const Register = () => {
                 </div>
               </div>
               <div className="login-center-buttons">
-                <button type="button" className='button-login'>Registrar-se</button>
+                <Link to="/" className='button-login'>Registrar-se</Link>
                 <button type="button" className='button-google'>
                   G+ Google
                 </button>
