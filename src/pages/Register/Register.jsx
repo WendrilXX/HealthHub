@@ -9,7 +9,29 @@ import { FaEyeSlash } from "react-icons/fa6";
 // Antes que falem mau! estou com sono! clonei a pagian de login, ai vc modifiquem e criem a pagina de registro 
 //  se tiver um código muito doido, não se preocupem!, a musica que eu to ouvindo é mais louca KKKKk enfim..... vou escrever meu artigo fui
 const Register = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [ showPassword, setShowPassword ] = useState(false);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Aqui você pode adicionar a lógica para autenticar o usuário
+    if(!email.includes("@")){
+      alert("Por favor, insira um email válido.");
+      return;
+    }
+
+    if(password.length < 3){
+      alert("Por favor, insira uma senha com mais de 3 caracteres.");
+      return;
+    }
+    // Por simplicidade, vamos apenas armazenar os dados no localStorage
+    localStorage.setItem('email', email);
+    localStorage.setItem('password', password);
+    alert('Usuário registrado!');
+    // Redirecione para a página desejada após o login
+    window.location.href = '/home';
+  };
 
 
   return (
@@ -25,10 +47,10 @@ const Register = () => {
           <div className="login-center">
             <h2>Registro</h2>
             <p>É um prazer ter vc por aqui</p>
-            <form>
-              <input type="email" placeholder="Email" />
+            <form onSubmit={handleSubmit}>
+              <input type="email" placeholder="Email" onChange={(e) => {setEmail(e.target.value)}}/>
               <div className="pass-input-div">
-                <input type={showPassword ? "text" : "password"} placeholder="Password" />
+                <input type={showPassword ? "text" : "password"} placeholder="Password" onChange={(e) => {setPassword(e.target.value)}} />
                 {showPassword ? <FaEyeSlash onClick={() => {setShowPassword(!showPassword)}} /> : <FaEye onClick={() => {setShowPassword(!showPassword)}} />}
                 
               </div>
@@ -45,7 +67,7 @@ const Register = () => {
                 </a>
               </div>
               <div className="login-center-buttons">
-                <button type="button">Login</button>
+                <button type="submit">Login</button>
                 <button type="button">
                   <img src={GoogleSvg} alt="" />
                   Entrar com o Google

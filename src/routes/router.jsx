@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "../pages/Login/Login";             ///Página de Login
 import Register from "../pages/Register/Register";             ///Página de Login
 import App from "../App";
+import Home from "../pages/Home/Home";
 import Forum from "../pages/Forum/Forum"; ///Página de Forum"
 import Recursos from "../pages/Recursos/index"
 import Profissional from '../pages/Profissional/Profissional'; // Página de Consulta
@@ -26,8 +27,8 @@ const RoutesApp = () => {
     <Router>
         <Routes>
           {/* <Route path="/home" element={<Private Item={App} />} /> */}
-          <Route path="/home" exact element={<App/>} />
-          <Route path="/" exact element={<Login />} />
+          <Route path="/home" exact element={<Home/>} />
+          <Route path="/login" exact element={<Login />} />
           <Route path="/recursos" exact element={<Recursos/>}/>  
           <Route path="/register" exact element={<Register />} />
           <Route path="/forum" exact element={<Forum />} />  

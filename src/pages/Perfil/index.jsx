@@ -6,13 +6,23 @@ class Perfil extends Component{
     constructor(props){
         super(props);
         this.state = {
-            email: "heitorsoaresviana@gmail.com",
-            senha: "123456"
+            email: localStorage.getItem('email'),
+            senha: localStorage.getItem('password')
+        }
+    }
+
+    componentDidMount(){
+        const email = localStorage.getItem("email");
+        const senha = localStorage.getItem("password");
+        
+        if(!email || !senha){
+            window.location.href = "/login";
+            return;
         }
     }
 
     render(){
-        const {email, senha} = this.state;
+        const {email} = this.state;
 
         return(
             <div className="profilePage">
