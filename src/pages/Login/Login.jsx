@@ -1,13 +1,13 @@
+// Importações
 import './Login.css'
 import React, { useEffect, useState } from "react";
 import Logo from "../../assets/autismo.png";
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa6";
-
+import { Link } from 'react-router-dom'; // Importação adicionada
 
 const Login = () => {
   const [ showPassword, setShowPassword ] = useState(false);
-
 
   return (
     <div className="login-main">
@@ -37,9 +37,9 @@ const Login = () => {
                     Lembrar por 30 dias 
                   </label>
                 </div>
-                <a href="#" className="forgot-pass-link">
+                <Link to="/register" className="forgot-pass-link">
                   Esqueceu a senha?
-                </a>
+                </Link>
               </div>
               <div className="login-center-buttons">
                 <button type="button" className='button-login'>Login</button>
@@ -51,7 +51,7 @@ const Login = () => {
           </div>
 
           <p className="login-bottom-p">
-            Não tem uma conta? <a href="#">Registrar-se</a>
+            Não tem uma conta? <Link to="/register">Registrar-se</Link>
           </p>
         </div>
       </div>
