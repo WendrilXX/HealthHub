@@ -7,6 +7,7 @@ import Forum from "../pages/Forum/Forum"; ///Página de Forum"
 import Recursos from "../pages/Recursos/index"
 import Profissional from '../pages/Profissional/Profissional'; // Página de Consulta
 import Grupos from "../pages/Grupos/GrupoDEApoio";
+import Perfil from "../pages/Perfil/index";
 
 
 //  isso aqui chama a função de autenticaç]ao do usuario 
@@ -31,7 +32,8 @@ const RoutesApp = () => {
           <Route path="/register" exact element={<Register />} />
           <Route path="/forum" exact element={<Forum />} />  
           <Route path="/profissional" exact element={<Profissional />} />
-          <Route path="/Grupos" exact element={<Grupos />} />
+          <Route path="/grupos" exact element={<Grupos />} />
+          <Route path="/perfil" exact element={<Perfil/>}/>
         </Routes>
     </Router>
   );
