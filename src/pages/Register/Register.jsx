@@ -35,22 +35,15 @@ const Register = () => {
                     Lembrar por 30 dias
                   </label>
                 </div>
-                <a href="#" className="forgot-pass-link">
-                  Esqueceu a senha?
-                </a>
               </div>
               <div className="login-center-buttons">
-                <button type="button" className='button-login'>Login</button>
+                <button type="button" className='button-login'>Registrar-se</button>
                 <button type="button" className='button-google'>
                   G+ Google
                 </button>
               </div>
             </form>
           </div>
-
-          <p className="login-bottom-p">
-            Não tem conta? <a href="#">Registra-se</a>
-          </p>
         </div>
       </div>
     </div>
