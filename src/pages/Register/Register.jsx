@@ -6,8 +6,6 @@ import GoogleSvg from "../../assets/icons8-google.svg";
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa6";
 
-// Antes que falem mau! estou com sono! clonei a pagian de login, ai vc modifiquem e criem a pagina de registro 
-//  se tiver um código muito doido, não se preocupem!, a musica que eu to ouvindo é mais louca KKKKk enfim..... vou escrever meu artigo fui
 const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -15,7 +13,6 @@ const Register = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Aqui você pode adicionar a lógica para autenticar o usuário
     if(!email.includes("@")){
       alert("Por favor, insira um email válido.");
       return;
@@ -25,11 +22,10 @@ const Register = () => {
       alert("Por favor, insira uma senha com mais de 3 caracteres.");
       return;
     }
-    // Por simplicidade, vamos apenas armazenar os dados no localStorage
+    // Salva o email e a senha no localStorage
     localStorage.setItem('email', email);
     localStorage.setItem('password', password);
     alert('Usuário registrado!');
-    // Redirecione para a página desejada após o login
     window.location.href = '/home';
   };
 

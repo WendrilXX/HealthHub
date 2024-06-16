@@ -14,7 +14,7 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Aqui você pode adicionar a lógica para autenticar o usuário
+    
     if(!email.includes("@")){
       alert("Por favor, insira um email válido.");
       return;
@@ -24,11 +24,10 @@ const Login = () => {
       alert("Por favor, insira uma senha com mais de 3 caracteres.");
       return;
     }
-    // Por simplicidade, vamos apenas armazenar os dados no localStorage
+    
     localStorage.setItem('email', email);
     localStorage.setItem('password', password);
     alert('Usuário logado!');
-    // Redirecione para a página desejada após o login
     window.location.href = '/home';
   };
 
