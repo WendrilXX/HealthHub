@@ -60,13 +60,16 @@ const Register = () => {
               </div>
               <div className="login-center-buttons">
                 <Link to="/" className='button-login'>Registrar-se</Link>
+                <div className="google-login-buttons">
                 <button type="button" className='button-google'>
                   G+ Google
-                <button type="submit">Login</button>
-                <button type="button">
-                  <img src={GoogleSvg} alt="" />
-                  Entrar com o Google
-                </button>
+                  </button>
+                  <button type="submit">Login</button>
+                  <button type="button">
+                      <img src={GoogleSvg} alt="" />
+                      Entrar com o Google
+                  </button>
+                </div>
               </div>
             </form>
           </div>
