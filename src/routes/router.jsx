@@ -9,6 +9,7 @@ import Recursos from "../pages/Recursos/index"
 import Profissional from '../pages/Profissional/Profissional'; // Página de Consulta
 import Grupos from "../pages/Grupos/GrupoDEApoio";
 import Perfil from "../pages/Perfil/index";
+import { Anotacoes } from "../pages/Anotacoes";
 
 
 //  isso aqui chama a função de autenticaç]ao do usuario 
@@ -35,6 +36,7 @@ const RoutesApp = () => {
           <Route path="/profissional" exact element={<Profissional />} />
           <Route path="/grupos" exact element={<Grupos />} />
           <Route path="/perfil" exact element={<Perfil/>}/>
+          <Route path="/anotacoes" exact element={<Anotacoes/>}/>
         </Routes>
     </Router>
   );
