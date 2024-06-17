@@ -1,0 +1,14 @@
+.div-body{
+    /*background-color: #e3e2df; */
+   
+    height: 100vh;
+}
+.img-autismo{
+    width: 60%;
+}
+.imagem{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

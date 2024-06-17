@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Importe o Link do react-router-dom
 import "./GrupoDEApoio.css";
+import PerfilImg from "../../assets/quebra-cabeca.png";
 
 function Grupos() {
   const grupos = [
@@ -32,12 +33,22 @@ function Grupos() {
       <div className="grupos-list">
         {grupos.map((grupo) => (
           <div key={grupo.id} className="grupo">
-            <h2>{grupo.nome}</h2>
-            <p>{grupo.descricao}</p>
+            <div className="element-gp">
+              <div className="img-perfil">
+                <img
+                  src={PerfilImg} alt="Imagem de Perfil"/>
+              </div>
+              <div className="descricao">
+                <h2>{grupo.nome}</h2>
+                <p>{grupo.descricao}</p>
+              </div>
+            </div>
             {/* Usando o Link do react-router-dom para o botão */}
-            <Link to="/forum">
-              <button>Ir para o Grupo</button>
-            </Link>
+            <div className="link">
+              <Link to="/forum">
+                <button>Ir para o Grupo</button>
+              </Link>
+            </div>
           </div>
         ))}
       </div>

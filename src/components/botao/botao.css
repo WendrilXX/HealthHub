@@ -1,0 +1,23 @@
+.button{
+    width: 70px;
+    height: 37px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+    margin-right: 10px;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.white {
+    background-color: white;
+  }
+  
+  .black {
+    background-color: black;
+    color: white;
+  }
