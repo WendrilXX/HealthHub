@@ -72,9 +72,9 @@ const Register = () => {
             </form>
           </div>
 
-          <p className="login-bottom-p">
-            Não tem conta? <a href="#">Registra-se</a>
-          </p>
+          {/* <p className="login-bottom-p">
+            Não tem conta? <a href="/register">Registra-se</a>
+          </p> */}
         </div>
       </div>
     </div>

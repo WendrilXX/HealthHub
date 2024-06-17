@@ -88,7 +88,7 @@ const Login = () => {
           </div>
 
           <p className="login-bottom-p">
-            Não tem uma conta? <a href="#">Registrar-se</a>
+            Não tem uma conta? <a href="/register">Registrar-se</a>
           </p>
         </div>
       </div>

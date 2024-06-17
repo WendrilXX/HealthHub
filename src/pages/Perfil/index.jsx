@@ -22,17 +22,23 @@ class Perfil extends Component{
     }
 
     render(){
-        const {email} = this.state;
+        const {email, senha} = this.state;
 
         return(
             <div className="profilePage">
-                <h1>Editar Perfil</h1>
-                <div className="userInfo">
-                    <h2>Informações do Usuário</h2>
-                    <ProfileForm email={email}/>
-                </div>
+                {!email || !senha ? (
+                    <h1>Faça login para acessar a página do perfil</h1>
+                ) : (
+                    <>
+                        <h1>Editar Perfil</h1>
+                        <div className="userInfo">
+                            <h2>Informações do Usuário</h2>
+                            <ProfileForm email={email}/>
+                        </div>
+                    </>
+                )}
             </div>
-        )
+        );
     }
 }
 
