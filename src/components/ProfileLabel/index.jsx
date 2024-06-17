@@ -1,4 +1,4 @@
-import { ProfileInput } from "../profileInput";
+import { ProfileInput } from "../ProfileInput/index";
 
 export const ProfileLabel = (props) => {
     const {label, id, type, placeholder} = props;
