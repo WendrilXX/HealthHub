@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import './styles.css';
 
@@ -7,17 +7,17 @@ export const Anotacoes = () => {
     const [selectedNote, setSelectedNote] = useState(-1);
     const [ notes, setNotes ] = useState([]);
 
-    const handleShowClick = () => {
+    const handleShowClick = () => { // Função para lidar com o onClick do botão Criar anotação
         setIsHidden(false);
         document.body.style.backgroundColor = "gray";
     }
 
-    const handleSubmit = (event) => {
+    const handleSubmit = (event) => { // Função para lidar com o evento onSubmit do formulário
         event.preventDefault();
         handleHideClick();
 
         const newNotes = [...notes];
-        const [ date, body ] = event.target;
+        const [ date, body ] = event.target; // Puxo os valores dos inputs com id date e body
         const note = {
             date: date.value,
             body: body.value
@@ -25,12 +25,12 @@ export const Anotacoes = () => {
         newNotes.push(note)
         setNotes(newNotes);
     }
-    const handleHideClick = () => {
+    const handleHideClick = () => { // Função para lidar com o evento onClick do botão X
         setIsHidden(true);
         document.body.style.backgroundColor = "white";
     }
 
-    const handleBodyClick= () => {
+    const handleBodyClick= () => { // Função para lidar com o evento onClick do botão Fechar
         setSelectedNote(-1);
         document.body.style.backgroundColor = "white";
     }
@@ -39,9 +39,9 @@ export const Anotacoes = () => {
         <div className='notesPage'>
             <h1>Anotações Diárias</h1>
             <div className='anotacoesDiv'>
-                {notes.map((note, index) => {
+                {notes.map((note, index) => { // Faz-se o map para exibir cada nota 
                     return(
-                        <div className='anotacao' key={index} onClick={() => {
+                        <div className='anotacao' key={index} onClick={() => { // O evento onClick altera o valor do selectedNote e muda a cor do body
                             setSelectedNote(index);
                             document.body.style.backgroundColor = "gray";
                         }}>
@@ -49,7 +49,7 @@ export const Anotacoes = () => {
                         </div>
                     )
                 })}
-                {selectedNote >= 0 && (
+                {selectedNote >= 0 && ( // Caso o selectedNote seja maior ou igual a zero, isto é, estiver selecionando alguma nota, ela irá ser exibida
                     <div className='corpoAnotacao'>
                         <h4>Anotação dia {notes[selectedNote].date}:</h4>
                         <p>{notes[selectedNote].body}</p>
@@ -58,7 +58,7 @@ export const Anotacoes = () => {
                 )}
             </div>
             <div className='containerForm'>
-                {!isHidden && 
+                {!isHidden && // Caso isHidden seja false, o formulário será exibido
                     <div className='anotacoesForm' onSubmit={handleSubmit} >
                         <button type='button' className='hideForm' onClick={handleHideClick}>X</button>
                         <form action="#" method='get' id='note' hidden>
