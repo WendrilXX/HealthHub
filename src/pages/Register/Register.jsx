@@ -66,7 +66,7 @@ const Register = () => {
                   </button>
                   <button type="submit">Login</button>
                   <button type="button">
-                      <img src={GoogleSvg} alt="" />
+                      {/* <img src={GoogleSvg} alt="" /> */}
                       Entrar com o Google
                   </button>
                 </div>

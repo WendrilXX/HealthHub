@@ -81,7 +81,7 @@ const Login = () => {
                 </Link>
                 <button type="submit" className='button-login'>Login</button>
                 <button type="button" className='button-google'>
-                  <img src={GoogleSvg} alt="" />
+                  {/* <img src={GoogleSvg} alt="" /> */}
                   Login com Google
                 </button>
               </div>
