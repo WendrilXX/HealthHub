@@ -18,17 +18,20 @@ const Consultas_ON = () => {
       <Widget />
 
       <div className="consultas-tabs">
-        <button className={tab === 'marcar' ? 'active' : ''} onClick={() => setTab('marcar')}>
-          Marcar Consulta
-        </button>
-        <button className={tab === 'consultas' ? 'active' : ''} onClick={() => setTab('consultas')}>
-          Consultas Marcadas
-        </button>
+        
       </div>
 
       {tab === 'marcar' && (
         <div className="consultas-section">
-          <h2>Marcar Consulta</h2>
+          <div className='section-h2-btn'>
+            <h2>Marcar Consulta</h2>
+            <button className={tab === 'marcar' ? 'active' : ''} onClick={() => setTab('marcar')}>
+              Marcar Consulta
+            </button>
+            <button className={tab === 'consultas' ? 'active' : ''} onClick={() => setTab('consultas')}>
+              Consultas Marcadas
+            </button>
+          </div>
           <ProfileDoctor onConsultaMarcada={handleConsultaMarcada} />
         </div>
       )}

@@ -44,7 +44,6 @@ const Register = () => {
               <div className="pass-input-div">
                 <input type={showPassword ? "text" : "password"} placeholder="Password" onChange={(e) => {setPassword(e.target.value)}} />
                 {showPassword ? <FaEyeSlash onClick={() => {setShowPassword(!showPassword)}} /> : <FaEye onClick={() => {setShowPassword(!showPassword)}} />}
-                
               </div>
               <div className="login-center-options">
                 <div className="remember-div">
