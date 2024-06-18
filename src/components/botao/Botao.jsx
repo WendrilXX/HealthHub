@@ -11,7 +11,7 @@ function Botao() {
   return (
     <div>
       <button 
-        className={`button ${color}`} 
+        className={`button-header ${color}`} 
         onClick={handleClick}
       >
         Tab 1

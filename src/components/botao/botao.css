@@ -1,4 +1,4 @@
-.button{
+.button-header{
     width: 70px;
     height: 37px;
     border-radius: 12px;
@@ -8,13 +8,14 @@
     z-index: 10;
     margin-right: 10px;
 }
-.button:hover{
+.button-header:hover{
     cursor: pointer;
     background-color: black;
     color: white;
 }
 .white {
     background-color: white;
+    color: black;
   }
   
   .black {

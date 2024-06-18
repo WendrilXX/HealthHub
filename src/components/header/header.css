@@ -11,7 +11,9 @@
     display: flex;
     align-self: self-end;
     margin-right: 20px;
-    margin-top: 22px;
+    margin-top: 10px;
+    position: relative;
+    bottom: 90px;
 }
 .img-mao{
     width: 80px;
@@ -19,14 +21,14 @@
     align-self: self-start;
     margin-left: 250px;
     position: relative;
-    bottom: 80px;
+    bottom: 170px;
 }
-.button{
+.button-header{
     margin-left: 370px;
     position: relative;
     bottom: 135px;
 }
-.botoes{
+.botoes-header{
     display: flex;
     gap: 0px; 
     margin-left: 0;
@@ -37,4 +39,17 @@
     display: flex;
     flex-direction: row;
     margin-left: 0px;
+}
+
+.titulo-header{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-self: self-start;
+    margin-top: 30px;
+    bottom: 0px;
+   font-family: Inter;
+   font-weight: 900;
+   margin-left: 10px;
+   font-size: 40px; 
 }

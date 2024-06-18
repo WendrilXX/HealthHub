@@ -1,4 +1,16 @@
+
+.profilePage{
+    margin-top: 105px;
+
+}
 #info{
     display: flex;
     flex-direction: column;
+}
+
+.userInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
 }

@@ -26,11 +26,14 @@ class Perfil extends Component{
 
         return(
             <div className="profilePage">
+
+                <div className="main-profile">
                 <h1>Editar Perfil</h1>
-                <div className="userInfo">
-                    <h2>Informações do Usuário</h2>
+               
+                    <div className="titulo-h2"> <h2>Informações do Usuário</h2> </div>
+                    <div className="userInfo">
                     <ProfileForm email={email}/>
-                </div>
+                </div></div>
             </div>
         )
     }
