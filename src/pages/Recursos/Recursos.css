@@ -1,17 +1,21 @@
 /* Estilos gerais para o container principal */
 .container {
-  min-height: 90vh; /* Ajustado para ocupar menos espaço vertical */
+  min-height: 100vh; /* O contêiner terá pelo menos a altura da viewport */
+  height: auto; /* Mas poderá crescer além disso se o conteúdo precisar */
   background: #f9f9f9; /* Mudança de cor de fundo para algo mais claro */
   max-width: 1200px;
-  padding: 20px; /* Reduzido para um espaçamento menor */
   margin: 0 auto;
 }
 
 /* Estilos para o contêiner de botões */
 .button-container {
-  min-height: 60px;
+  position: sticky;
+  top: 0;
+  bottom: 50px; /* Distância máxima que os botões podem descer */
+  z-index: 1000; /* Garante que os botões fiquem acima de outros elementos */
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Estilos para o contêiner de pesquisa */
@@ -23,3 +27,12 @@
 .search-container h1 {
   margin-bottom: 30px;
 }
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espaçamento horizontal */
+  align-items: stretch; /* Ajusta os itens para preencher a altura do contêiner */
+  padding-top: 60px; /* Altura dos botões */
+}
+
+/* Estilos para o contêiner de posts */
