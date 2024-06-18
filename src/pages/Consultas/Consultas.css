@@ -1,0 +1,71 @@
+/* Consultas.css */
+
+/* Estilos gerais para o container da página */
+.consultas-container {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para as abas de navegação */
+  .consultas-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .consultas-tabs button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .consultas-tabs button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para as seções de conteúdo */
+  .consultas-section {
+    margin-top: 20px;
+  }
+  
+  .consultas-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para o formulário de consulta */
+  .formulario-consulta {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formulario-consulta label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .formulario-consulta input[type="text"],
+  .formulario-consulta input[type="date"],
+  .formulario-consulta select {
+    width: calc(100% - 22px); /* Ajuste para a largura com padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+ 
+  

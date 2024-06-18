@@ -8,6 +8,7 @@ import Forum from "../pages/Forum/Forum"; ///Página de Forum"
 import Recursos from "../pages/Recursos/index"
 import Profissional from '../pages/Profissional/Profissional'; // Página de Consulta
 import Grupos from "../pages/Grupos/GrupoDEApoio";
+import Consultas_ON from "../pages/Consultas/Consultas";
 import Perfil from "../pages/Perfil/index";
 import { Anotacoes } from "../pages/Anotacoes";
 
@@ -36,6 +37,7 @@ const RoutesApp = () => {
           <Route path="/forum" exact element={<Forum />} />  
           <Route path="/profissional" exact element={<Profissional />} />
           <Route path="/Grupos" exact element={<Grupos />} />
+          <Route path="/Consultas" exact element={<Consultas_ON />} />
           <Route path="/grupos" exact element={<Grupos />} />
           <Route path="/perfil" exact element={<Perfil/>}/>
           <Route path="/anotacoes" exact element={<Anotacoes/>}/>
