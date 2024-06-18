@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom"; // Importe o Link do react-router-dom
 import "./GrupoDEApoio.css";
 import PerfilImg from "../../assets/quebra-cabeca.png";
+import { Widget } from "../../components/Widget"
 
 
 function Grupos() {
