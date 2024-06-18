@@ -55,7 +55,7 @@ class Recursos extends Component{
       <section className='container'>
          {<Widget />}
         <div className='search-container'>
-          <h1>Search Value:</h1>
+          <h1>Pesquisar abordagem:</h1>
           <TextInput type="search" value={searchValue} onChange={this.handleChange}/>
         </div>
 
