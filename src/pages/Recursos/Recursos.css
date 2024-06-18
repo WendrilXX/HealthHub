@@ -1,3 +1,4 @@
+/* Estilos gerais para o container principal */
 .container {
   min-height: 90vh; /* Ajustado para ocupar menos espaço vertical */
   background: #f9f9f9; /* Mudança de cor de fundo para algo mais claro */
@@ -6,24 +7,19 @@
   margin: 0 auto;
 }
 
-.button-container{
+/* Estilos para o contêiner de botões */
+.button-container {
   min-height: 60px;
   display: flex;
   align-items: flex-end;
 }
 
-.search-container{
+/* Estilos para o contêiner de pesquisa */
+.search-container {
   margin-bottom: 30px;
 }
 
-.search-container h1{
+/* Estilos para o título dentro do contêiner de pesquisa */
+.search-container h1 {
   margin-bottom: 30px;
-}
-
-.text-input {
-    width: 100%;
-    font-size: 16px; /* Tamanho de fonte um pouco maior para melhor legibilidade */
-    padding: 8px 12px; /* Espaçamento interno ajustado */
-    border: 1px solid #ced4da; /* Bordas claras para diferenciar */
-    border-radius: 4px; /* Bordas arredondadas para um design mais moderno */
 }
