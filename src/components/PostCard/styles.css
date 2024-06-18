@@ -1,17 +1,18 @@
-.post{
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 100ms ease-in-out;
+.post {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 150ms ease-in-out;
 }
   
 .post:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px); /* Efeito de elevação suave */
 }
 
-.post-content{
-  padding: 30px;
+.post-content {
+  padding: 20px; /* Reduzido para um espaçamento menor */
 }
 
-.post img{
+.post img {
   width: 100%;
+  height: auto; /* Garante proporção da imagem */
 }

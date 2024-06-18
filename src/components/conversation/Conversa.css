@@ -33,7 +33,8 @@
 
 /* Estilos para a caixa de conversa */
 .Box-conversa {
-  width: 60%;
+  width: 90%; /* Ajustado para ser mais responsivo */
+  max-width: 600px; /* Limita a largura máxima para manter a legibilidade */
   margin-bottom: 30px; /* Aumentando a margem inferior para mais espaço */
   padding: 20px; /* Aumentando o padding para mais espaço interno */
   border: 1px solid #ddd; /* Alterando a cor da borda para um cinza mais claro */
@@ -46,8 +47,7 @@
 
 /* Estilos para a seção de botões */
 .botoes {
-  width: 100%;
-  height: auto; /* Permite que a altura se ajuste ao conteúdo */
+  width: 100%; /* Permite que a altura se ajuste ao conteúdo */
   border: 2px solid transparent; /* Bordas transparentes */
   display: flex;
   align-items: center;
