@@ -9,12 +9,12 @@ function Header(){
 
             <img src="../src/assets/Profile-circle.png" className='img-user'/>
 
-            {/* <img src="../src/assets/mao.png" className='img-mao'/>
-            
-            
-             <div className='botoes-header'>
-                {/* <Botao className='botoes-div'/> 
-             </div> */}
+            <div className='botoes-header'>
+                 <Botao className='botoes-div'/> 
+            </div>
+
+            {/*
+             */}
              
             {/* <CampoPesquisa /> */}
           
