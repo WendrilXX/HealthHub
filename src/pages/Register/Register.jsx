@@ -42,7 +42,7 @@ const Register = () => {
             <form onSubmit={handleSubmit}>
               <input type="email" placeholder="Email" onChange={(e) => {setEmail(e.target.value)}}/>
               <div className="pass-input-div">
-                <input type={showPassword ? "text" : "password"} placeholder="Password" onChange={(e) => {setPassword(e.target.value)}} />
+                <input type={showPassword ? "text" : "password"} placeholder="Password" onChange={(e) => {setPassword(e.target.value)}} className='toggle-password' />
                 {showPassword ? <FaEyeSlash onClick={() => {setShowPassword(!showPassword)}} /> : <FaEye onClick={() => {setShowPassword(!showPassword)}} />}
                 
               </div>
@@ -56,14 +56,18 @@ const Register = () => {
               </div>
               <div className="login-center-buttons">
                 <div className="google-login-buttons">
-                  <button type="submit">Registre-se</button>
-                  <button type="button">
+                  <button type="submit" className='button-register'>Registre-se</button>
+                  <button type="button" className='button-google-register'>
                   G+ Google
                   </button>
                 </div>
               </div>
             </form>
           </div>
+
+          <p className="login-bottom-p">
+            Já tem uma conta? <Link to="/login">Login</Link>
+          </p>
         </div>
       </div>
     </div>
