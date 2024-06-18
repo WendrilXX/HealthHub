@@ -42,7 +42,7 @@ class Recursos extends Component{
       this.setState({ posts: nextPosts });
     }
     else{
-      const filterPosts = nextPosts.filter(post => post.title.includes(e.target.value.toLowerCase())); //Certo
+      const filterPosts = nextPosts.filter(post => post.title.toLowerCase().includes(e.target.value.toLowerCase())); //Certo
       this.setState({ posts: filterPosts });
     }
   }
@@ -55,7 +55,7 @@ class Recursos extends Component{
       <section className='container'>
          {<Widget />}
         <div className='search-container'>
-          <h1>Pesquisa:</h1>
+          <h1>Pesquisar abordagem:</h1>
           <TextInput type="search" value={searchValue} onChange={this.handleChange}/>
         </div>
 
