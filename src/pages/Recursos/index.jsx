@@ -55,6 +55,7 @@ class Recursos extends Component{
 
       <section className='container1'>
 
+
          
         <div className='search-container'>
           <h1>Pesquisar abordagem:</h1>
@@ -67,9 +68,14 @@ class Recursos extends Component{
           <div className="button-container">
             <PostButton loadMorePosts={this.loadMorePosts} disabled={noMorePosts}/>
 
-            <h2>Carregar mais</h2>
+            {/* <h2>Carregar mais</h2> */}
           </div>
+          {/* <div>{<Widget/>}</div> */}
+=======
+
+            <h2>Carregar mais</h2>
           <div>{<Widget/>}</div>
+
 
         </>
         ) : (

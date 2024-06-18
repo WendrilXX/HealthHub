@@ -28,6 +28,7 @@
     bottom: 170px;
 }
 
+
 .button-header{
     position: relative;
     bottom: 222px;
@@ -40,13 +41,18 @@
     gap: 15px;
     position: absolute;
     top: 265px;
+
 }
+
 .botoes-div-header{
     display: flex;
     flex-direction: row;
     margin-left: 0px;
-  
+    padding: 10px;
+    
 }
+  
+
 
 .titulo-header{
     position: relative;
