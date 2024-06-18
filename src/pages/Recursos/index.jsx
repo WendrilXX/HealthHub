@@ -42,7 +42,7 @@ class Recursos extends Component{
       this.setState({ posts: nextPosts });
     }
     else{
-      const filterPosts = nextPosts.filter(post => post.title.includes(e.target.value.toLowerCase())); //Certo
+      const filterPosts = nextPosts.filter(post => post.title.toLowerCase().includes(e.target.value.toLowerCase())); //Certo
       this.setState({ posts: filterPosts });
     }
   }
