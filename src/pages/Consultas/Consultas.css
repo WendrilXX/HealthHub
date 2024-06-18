@@ -34,12 +34,20 @@
     width: 150px;
     height: 50px;
   }
-  #button-marcar{
-    margin-left: 300px;
-  }
   
   button:hover {
     background-color: #0056b3;
+  }
+
+  .div-button-marcar{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+  }
+
+  #button-marcar{
+    margin: 0;
   }
   
   /* Estilos para as seções de conteúdo */
