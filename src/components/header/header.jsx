@@ -1,3 +1,4 @@
+import { Link } from 'phosphor-react';
 import Botao from '../botao/Botao';
 import './header.css'
 // import CampoPesquisa from './pesquisa/pesquisa';
@@ -12,7 +13,10 @@ function Header(){
             <img src="../src/assets/sair-header.png" alt="sair"className='img-sair' />
 
             <div className='botoes-header'>
-                 <Botao className='botoes-div-header' propButton='Home'/> 
+                
+                   <Botao className='botoes-div-header' propButton='Home'/>
+                
+                 
                  <Botao className='botoes-div-header' propButton='Fórum'/> 
                  <Botao className='botoes-div-header' propButton='Recursos'/> 
                  <Botao className='botoes-div-header' propButton='Profissional'/> 
