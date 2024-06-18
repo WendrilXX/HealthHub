@@ -1,9 +1,10 @@
 .div-body{
     /*background-color: #e3e2df; */
-   
+    
     height: 100vh;
 }
 .img-autismo{
+    margin-top: 50px;
     width: 60%;
 }
 .imagem{
@@ -12,3 +13,12 @@
     align-items: center;
     justify-content: center;
 }
+
+.corpo{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}	
+
+
