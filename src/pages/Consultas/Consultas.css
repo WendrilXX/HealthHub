@@ -42,12 +42,13 @@
   .div-button-marcar{
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     width: 100%;
   }
 
   #button-marcar{
     margin: 0;
+    width: 350px;
   }
   
   /* Estilos para as seções de conteúdo */

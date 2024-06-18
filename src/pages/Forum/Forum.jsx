@@ -8,7 +8,7 @@ function Forum() {
     <>
     <Header />
     <div className='body-forum'>
-      {<Widget />}
+      {/* {<Widget />} */}
       <Conversa></Conversa>
     </div>
     </>

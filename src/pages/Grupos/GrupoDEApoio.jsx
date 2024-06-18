@@ -31,7 +31,7 @@ function Grupos() {
 
   return (
     <div className="GrupoDeApoio-container">
-       {<Widget />}
+       {/* {<Widget />} */}
       <h1>Grupos de Apoio</h1>
       <div className="grupos-list">
         {grupos.map((grupo) => (
