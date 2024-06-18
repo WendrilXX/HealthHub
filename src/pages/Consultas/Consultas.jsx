@@ -15,17 +15,16 @@ const Consultas_ON = () => {
 
   return (
     <div className="consultas-container">
-      <Widget />
 
-      <div className="consultas-tabs">
+      {/* <div className="consultas-tabs">
         
-      </div>
+      </div> */}
 
       {tab === 'marcar' && (
         <div className="consultas-section">
           <div className='section-h2-btn'>
             <h2>Marcar Consulta</h2>
-            <button className={tab === 'marcar' ? 'active' : ''} onClick={() => setTab('marcar')}>
+            <button className={tab === 'marcar' ? 'active' : ''} onClick={() => setTab('marcar')} id='button-marcar'>
               Marcar Consulta
             </button>
             <button className={tab === 'consultas' ? 'active' : ''} onClick={() => setTab('consultas')}>
@@ -60,6 +59,8 @@ const Consultas_ON = () => {
           )}
         </div>
       )}
+      <div> <Widget /></div>
+      
     </div>
   );
 };

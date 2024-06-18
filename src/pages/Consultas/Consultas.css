@@ -34,6 +34,9 @@
     width: 150px;
     height: 50px;
   }
+  #button-marcar{
+    margin-left: 300px;
+  }
   
   button:hover {
     background-color: #0056b3;
@@ -50,6 +53,8 @@
   
   .section-h2-btn h2 {
     margin-bottom: 10px;
+    width: 200px;
+  
   }
 
   .section-h2-btn{
@@ -58,6 +63,7 @@
     align-items: center;
     width: 100%;
     justify-content: space-between;
+   
   }
   
   /* Estilos para o formulário de consulta */
@@ -83,6 +89,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
   }
+
   
  
   
