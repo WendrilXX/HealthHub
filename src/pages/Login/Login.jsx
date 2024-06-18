@@ -1,6 +1,6 @@
 // Importações
 import './Login.css'
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Logo from "../../assets/autismo.png";
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa6";
@@ -28,16 +28,6 @@ const Login = () => {
     alert('Usuário logado!');
     window.location.href = '/home';
   };
-
-  // useEffect(() => { // Função para verificar se o usuário está logado ou não
-  //   const email = localStorage.getItem("email");
-  //   const senha = localStorage.getItem("password");
-    
-  //   if(email && senha){
-  //     window.location.href = "/home";
-  //     return;
-  //   }
-  // }, []);
   
   return (
     <div className="login-main">
@@ -56,9 +46,9 @@ const Login = () => {
               <div className="pass-input-div">
                 <input type={showPassword? "text" : "password"} placeholder="Password" />
                 <span className="toggle-password" onClick={() => setShowPassword(!showPassword)}>
-                    {showPassword? <FaEyeSlash /> : <FaEye />}
+                    {/* {showPassword? <FaEyeSlash /> : <FaEye />} */}
                 </span>
-                <input type={showPassword ? "text" : "password"} placeholder="Password" onChange={(e) => setPassword(e.target.value)}/>
+                <input type={showPassword ? "text" : "password"} placeholder="Confirm Password" onChange={(e) => setPassword(e.target.value)}/>
                 {showPassword ? <FaEyeSlash onClick={() => {setShowPassword(!showPassword)}} /> : <FaEye onClick={() => {setShowPassword(!showPassword)}} />}
                 
               </div>
@@ -75,15 +65,10 @@ const Login = () => {
                 </Link>
               </div>
               <div className="login-center-buttons">
-                  <button type="button" className='button-login'>Login</button>
                 <Link to="/home">
                   <button type="button" className='button-google'>G+ Google</button>
                 </Link>
                 <button type="submit" className='button-login'>Login</button>
-                <button type="button" className='button-google'>
-                  {/* <img src={GoogleSvg} alt="" /> */}
-                  Login com Google
-                </button>
               </div>
             </form>
           </div>

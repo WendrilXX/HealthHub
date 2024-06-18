@@ -38,15 +38,15 @@ const Register = () => {
           </div>
           <div className="login-center">
             <h2>Registro</h2>
-            <p>É um prazer ter vc por aqui</p>
+            <p>É um prazer ter você por aqui</p>
             <form onSubmit={handleSubmit}>
               <input type="email" placeholder="Email" onChange={(e) => {setEmail(e.target.value)}}/>
               <div className="pass-input-div">
                 <input type={showPassword? "text" : "password"} placeholder="Password" />
                 <span className="toggle-password" onClick={() => setShowPassword(!showPassword)}>
-                    {showPassword? <FaEyeSlash /> : <FaEye />}
+                    {/* {showPassword? <FaEyeSlash /> : <FaEye />} */}
                 </span>
-                <input type={showPassword ? "text" : "password"} placeholder="Password" onChange={(e) => {setPassword(e.target.value)}} />
+                <input type={showPassword ? "text" : "password"} placeholder="Confirm Password" onChange={(e) => {setPassword(e.target.value)}} />
                 {showPassword ? <FaEyeSlash onClick={() => {setShowPassword(!showPassword)}} /> : <FaEye onClick={() => {setShowPassword(!showPassword)}} />}
                 
               </div>
@@ -59,16 +59,11 @@ const Register = () => {
                 </div>
               </div>
               <div className="login-center-buttons">
-                <Link to="/" className='button-login'>Registrar-se</Link>
                 <div className="google-login-buttons">
                 <button type="button" className='button-google'>
                   G+ Google
-                  </button>
-                  <button type="submit">Login</button>
-                  <button type="button">
-                      {/* <img src={GoogleSvg} alt="" /> */}
-                      Entrar com o Google
-                  </button>
+                </button>
+                  <button type="submit">Registrar-se</button>
                 </div>
               </div>
             </form>
