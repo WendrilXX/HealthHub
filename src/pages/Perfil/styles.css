@@ -1,16 +1,56 @@
+.main-perfil{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo-perfil{
+    order: 0;
+}
 
-.profilePage{
-    margin-top: 105px;
-
+.tituloh2-profile{
+    order: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.userInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 #info{
     display: flex;
     flex-direction: column;
 }
 
+
+/* .titulo-profile-page{
+    padding: 0;
+}
+
+.profilePage{
+    margin-top: 105px;
+    display: flex;
+align-items: center;
+justify-content: center;
+    height: 100vh;
+    text-align: center;
+
+}
+#info{
+    display: flex;
+    flex-direction: column;
+}
+.tituloh2{
+    margin-top: 0;
+    margin-bottom: 100px;
+    order: 1;
+}
+
 .userInfo{
     display: flex;
-    align-items: center;
     justify-content: center;
     margin-top: 60px;
-}
+} */

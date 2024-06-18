@@ -27,14 +27,20 @@ class Perfil extends Component{
         return(
             <div className="profilePage">
                 {!email || !senha ? (
-                    <h1>Faça login para acessar a página do perfil</h1>
+                    <h1 className="titulo-profile-page">Faça login para acessar a página do perfil</h1>
                 ) : (
                     <>
-                        <h1>Editar Perfil</h1>
+                    <div className="main-perfil">
+                    <h1 className="titulo-perfil">Editar Perfil</h1>
                         <div className="userInfo">
-                            <h2>Informações do Usuário</h2>
+                            <div className="tituloh2-profile">
+                                <h2>Informações do Usuário</h2>
+                            </div>
+                           
                             <ProfileForm email={email}/>
                         </div>
+                    </div>
+                       
                     </>
                 )}
             </div>
