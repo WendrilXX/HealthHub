@@ -67,7 +67,7 @@ class Recursos extends Component{
           </div>
         </>
         ) : (
-          <h1>Não elementos com esse título.</h1>
+          <h1>Não há abordagens com esse título.</h1>
         )}
       </section>
     );
