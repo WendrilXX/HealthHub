@@ -1,0 +1,48 @@
+.anotacoesDiv{
+    display: flex;
+    flex-direction: column;
+}
+.anotacao{
+    border: 2px solid black;
+    border-radius: 15px;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 0px;
+    cursor: pointer;
+}
+.anotacoesForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 250px;
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+}
+.corpoAnotacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px black solid;
+    background-color: white;
+}
+#note{
+    display: flex;
+    flex-direction: column;
+}
+.containerForm{
+    display: flex;
+    justify-content: center;
+}
+.hideForm{
+    margin-left: 290px;
+}
+.hideBody{
+    width: 100px;
+    margin-bottom: 10px;
+}

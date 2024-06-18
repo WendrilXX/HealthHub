@@ -1,12 +1,20 @@
+
 .GrupoDeApoio-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
 
+.GrupoDeApoio-container h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .grupos-list {
   list-style-type: none; /* Remove bullets from list */
   padding: 0;
+  
 }
 
 .grupo {
@@ -15,7 +23,21 @@
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
+  width: 800px;
 }
+
+.element-gp{
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+}
+
+.descricao{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
 
 .perfil_photoName {
   display: flex;
@@ -43,8 +65,19 @@ button {
   border-radius: 4px;
   cursor: pointer;
   margin-top: 10px;
+  
 }
 
 button:hover {
   background-color: #0056b3;
 }
+
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  margin-left: auto; /* Align to the right */
+}
+

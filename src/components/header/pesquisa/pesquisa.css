@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.input-pesquisa{
+    background-color: white;
+    padding: 7px;
+    border: none;
+}
+.campo-pesquisa{
+    gap: 16px;
+    position: relative;
+    bottom: 275px;
+   display: flex;
+   align-self: self-end;
+   margin-right: 125px;
+   gap: 1px;
+}
+.botao-pesquisa{
+    padding: 7px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+.input-pesquisa,
+.botao-pesquisa {
+  margin-right: 4px; 
+  border-radius: 6px;
+  padding: 10px;
+  border: none;
+}
+.botao-pesquisa:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+.titulo{
+    position: relative;
+    bottom: 205px;
+   font-family: Inter;
+   font-weight: 900;
+   margin-left: 10px;
+   font-size: 40px; 
+}
+

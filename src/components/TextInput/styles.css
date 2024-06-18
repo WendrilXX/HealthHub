@@ -1,5 +1,7 @@
-.text-input{
+.text-input {
     width: 100%;
-    font-size: 20px;
-    padding: 5px 10px;
+    font-size: 16px; /* Tamanho de fonte um pouco maior para melhor legibilidade */
+    padding: 8px 12px; /* Espaçamento interno ajustado */
+    border: 1px solid #ced4da; /* Bordas claras para diferenciar */
+    border-radius: 4px; /* Bordas arredondadas para um design mais moderno */
 }

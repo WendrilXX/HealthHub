@@ -1,3 +1,4 @@
+import './Forum.css';
 import React from "react";
 import Conversa from "../../components/conversation/Conversa";
 import { Widget } from "../../components/Widget";

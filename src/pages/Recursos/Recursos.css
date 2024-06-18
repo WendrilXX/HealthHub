@@ -1,0 +1,29 @@
+.container {
+  min-height: 90vh; /* Ajustado para ocupar menos espaço vertical */
+  background: #f9f9f9; /* Mudança de cor de fundo para algo mais claro */
+  max-width: 1200px;
+  padding: 20px; /* Reduzido para um espaçamento menor */
+  margin: 0 auto;
+}
+
+.button-container{
+  min-height: 60px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.search-container{
+  margin-bottom: 30px;
+}
+
+.search-container h1{
+  margin-bottom: 30px;
+}
+
+.text-input {
+    width: 100%;
+    font-size: 16px; /* Tamanho de fonte um pouco maior para melhor legibilidade */
+    padding: 8px 12px; /* Espaçamento interno ajustado */
+    border: 1px solid #ced4da; /* Bordas claras para diferenciar */
+    border-radius: 4px; /* Bordas arredondadas para um design mais moderno */
+}

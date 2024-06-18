@@ -1,4 +1,4 @@
-import './styles.css';
+import './Recursos.css';
 import { Component } from 'react';
 import { PostsDiv } from '../../components/PostsDiv';
 import { loadPosts } from '../../utils/load-posts';

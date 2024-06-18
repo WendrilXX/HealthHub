@@ -37,9 +37,12 @@ function Conversa() {
           <p>{conversa.mensagem}</p>
 
           <section className="botoes">
-            <div className="responder">
-              <p>Responder</p>
-            </div>
+            <textarea
+              className="responder"
+              placeholder="Responder comentário…"
+              rows="4"
+              style={{ resize: 'none' }} // Impede o redimensionamento do textarea
+            ></textarea>
           </section>
         </div>
       ))}
