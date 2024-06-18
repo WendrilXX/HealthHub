@@ -11,6 +11,7 @@ import Grupos from "../pages/Grupos/GrupoDEApoio";
 import Consultas_ON from "../pages/Consultas/Consultas";
 import Perfil from "../pages/Perfil/index";
 import { Anotacoes } from "../pages/Anotacoes";
+import SuporteForm from "../pages/Suporte";
 
 
 //  isso aqui chama a função de autenticaç]ao do usuario 
@@ -41,6 +42,7 @@ const RoutesApp = () => {
           <Route path="/grupos" exact element={<Grupos />} />
           <Route path="/perfil" exact element={<Perfil/>}/>
           <Route path="/anotacoes" exact element={<Anotacoes/>}/>
+          <Route path="/suporte" exact element={<SuporteForm/>} />
         </Routes>
     </Router>
   );
