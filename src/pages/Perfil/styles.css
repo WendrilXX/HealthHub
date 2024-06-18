@@ -1,6 +1,6 @@
 
 .profilePage{
-    margin-top: 105px;
+    margin-top: 40px;
 
 }
 #info{
@@ -12,5 +12,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+button{
+    margin-left: 80px;
 }
