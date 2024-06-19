@@ -13,6 +13,7 @@
 } */
 
 .titulo-sobre{
+    color: #e3f4ff;
     font-size: 40pt;
     text-align: left;
 }
@@ -26,6 +27,11 @@
     flex-direction: column;
 }
 .conteudo-sobre{
+    color: #e3f4ff;
     font-size: 15pt;
     text-align: justify;
+}
+
+.p-sobre1, .p-sobre2{
+    color: #e3f4ff;
 }

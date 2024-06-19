@@ -6,11 +6,11 @@ function SobreNos(){
             <div className='texto-sobre'>
                 <h1 className='titulo-sobre'>Sobre Nós</h1>
                 <div className='conteudo-sobre'>
-                    <p>
+                    <p className='p-sobre1'>
                     O objetivo do HealtHub é tornar o acesso a cuidados de saúde mental mais inclusivo e convenientemente disponível para todos, 
                     promovendo assim uma comunidade de apoio forte e informada.</p>
 
-                    <p>
+                    <p className='p-sobre2'>
                     No HealthHub, acreditamos que a saúde mental é uma parte essencial do bem-estar geral e que todos devem ter acesso a recursos e 
                     suporte de qualidade, independentemente de sua localização ou situação financeira. Nossa plataforma foi criada com a missão de derrubar 
                     as barreiras que muitas vezes impedem as pessoas de buscar e receber ajuda para questões de saúde mental.
