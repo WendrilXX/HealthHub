@@ -1,6 +1,6 @@
 // Importações
 import './Login.css'
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Logo from "../../assets/autismo.png";
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa6";
@@ -51,16 +51,6 @@ const Login = () => {
     alert('Usuário logado!');
     window.location.href = '/home';
   };
-
-  // useEffect(() => { // Função para verificar se o usuário está logado ou não
-  //   const email = localStorage.getItem("email");
-  //   const senha = localStorage.getItem("password");
-    
-  //   if(email && senha){
-  //     window.location.href = "/home";
-  //     return;
-  //   }
-  // }, []);
   
   return (
     <div className="login-main">

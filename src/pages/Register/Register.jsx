@@ -38,7 +38,7 @@ const Register = () => {
           </div>
           <div className="login-center">
             <h2>Registro</h2>
-            <p>É um prazer ter vc por aqui</p>
+            <p>É um prazer ter você por aqui</p>
             <form onSubmit={handleSubmit}>
               <input type="email" placeholder="Email" onChange={(e) => {setEmail(e.target.value)}}/>
               <div className="pass-input-div">
