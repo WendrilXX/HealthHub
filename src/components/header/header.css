@@ -11,7 +11,7 @@
     top: 0;
 }
 .img-user{
-    width: 60px;
+    width: 40px;
     display: flex;
     align-self: self-end;
     margin-right: 110px;
@@ -45,6 +45,7 @@
     position: absolute;
     top: 265px; 
     /* background-color: black; */
+    
 }
 
 /* .botoes-div-header{
@@ -86,4 +87,5 @@
     bottom: 245px;
     align-items: center;
     cursor: pointer;
+    
 }
