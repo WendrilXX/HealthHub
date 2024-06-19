@@ -12,7 +12,7 @@ import Consultas_ON from "../pages/Consultas/Consultas";
 import Perfil from "../pages/Perfil/index";
 import { Anotacoes } from "../pages/Anotacoes";
 import SuporteForm from "../pages/Suporte";
-
+import Feedback from "../pages/Feedback/Feedback";
 
 //  isso aqui chama a função de autenticaç]ao do usuario 
 //  pra saber se o fih duma egua ta logado, ou já fez login 
@@ -42,6 +42,7 @@ const RoutesApp = () => {
           <Route path="/perfil" exact element={<Perfil/>}/>
           <Route path="/anotações" exact element={<Anotacoes/>}/>
           <Route path="/suporte" exact element={<SuporteForm/>} />
+          <Route path="/feedback" exact element={<Feedback/>} />
         </Routes>
     </Router>
   );
