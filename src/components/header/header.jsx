@@ -27,6 +27,7 @@ const Header = () => {
                  <Botao className='botoes-div-header' propButton='Consultas'/> 
                  <Botao className='botoes-div-header' propButton='Suporte'/> 
                  <Botao className='botoes-div-header' propButton='Anotações'/> 
+                 <Botao className='botoes-div-header' propButton='Feedback'/> 
             </div>
 
             {/*

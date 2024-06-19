@@ -49,4 +49,28 @@
   .submit-button:hover {
     background-color: #0056b3;
   }
+  .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rating button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .star {
+    font-size: 25px;
+    color: grey;
+  }
+  
+  .on .star {
+    color: gold; /* Estrelas preenchidas serão douradas */
+  }
+  
+  .off .star {
+    color: grey; /* Estrelas não preenchidas serão cinzas */
+  }
   
