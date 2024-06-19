@@ -31,7 +31,7 @@ const Register = () => {
 
   return (
     <div className="login-main">
-      <div className="login-right">
+      {/* <div className="login-right"> */}
         <div className="login-right-container">
           <div className="login-logo">
             <img src={Logo} alt="" />
@@ -42,13 +42,8 @@ const Register = () => {
             <form onSubmit={handleSubmit}>
               <input type="email" placeholder="Email" onChange={(e) => {setEmail(e.target.value)}}/>
               <div className="pass-input-div">
-                <input type={showPassword? "text" : "password"} placeholder="Password" />
-                <span className="toggle-password" onClick={() => setShowPassword(!showPassword)}>
-                    {/* {showPassword? <FaEyeSlash /> : <FaEye />} */}
-                </span>
-                <input type={showPassword ? "text" : "password"} placeholder="Confirm Password" onChange={(e) => {setPassword(e.target.value)}} />
+                <input type={showPassword ? "text" : "password"} placeholder="Password" onChange={(e) => {setPassword(e.target.value)}} />
                 {showPassword ? <FaEyeSlash onClick={() => {setShowPassword(!showPassword)}} /> : <FaEye onClick={() => {setShowPassword(!showPassword)}} />}
-                
               </div>
               <div className="login-center-options">
                 <div className="remember-div">
@@ -60,16 +55,20 @@ const Register = () => {
               </div>
               <div className="login-center-buttons">
                 <div className="google-login-buttons">
-                <button type="button" className='button-google'>
+                  <button type="submit" className='button-register'>Registre-se</button>
+                  <button type="button" className='button-google-register'>
                   G+ Google
-                </button>
-                  <button type="submit">Registrar-se</button>
+                  </button>
                 </div>
               </div>
             </form>
           </div>
+
+          <p className="login-bottom-p">
+            Já tem uma conta? <Link to="/login">Login</Link>
+          </p>
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 };

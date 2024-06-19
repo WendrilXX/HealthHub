@@ -6,7 +6,30 @@ import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa6";
 import { Link } from 'react-router-dom'; // Importação adicionada
 
+import DarkModeToggle from 'react-dark-mode-toggle'
+
+// Se deus quiser e o diabo não atrapalhar hj eu durmo antes das 4h da manhã
+// const getThemeFromStorage = () => {
+//   let theme = true
+//   if (localStorage.getItem('theme')) {
+//     theme = JSON.parse(localStorage.getItem('theme'))
+//   }
+//   return theme
+// }
+
 const Login = () => {
+
+  // const [isDarkMode, setIsDarkMode] = useState(getThemeFromStorage())  
+  // useEffect(() => {
+  //   if (isDarkMode) {
+  //     document.documentElement.className = 'light-theme'
+  //   } else {
+  //     document.documentElement.className = 'dark-theme'
+  //   }
+  //   localStorage.setItem('theme', isDarkMode)
+  // }, [isDarkMode])
+
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [ showPassword, setShowPassword ] = useState(false);
@@ -31,7 +54,14 @@ const Login = () => {
   
   return (
     <div className="login-main">
-      <div className="login-right">
+      
+      {/* <div className="login-right"> */}
+      {/* <DarkModeToggle
+            className='toggler'
+            size={50}
+            onChange={setIsDarkMode}
+            checked={isDarkMode}
+          /> */}
         <div className="login-right-container">
           <div className="login-logo">
             <img src={Logo} alt="" />
@@ -44,13 +74,8 @@ const Login = () => {
                 <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)}/>
               </div>
               <div className="pass-input-div">
-                <input type={showPassword? "text" : "password"} placeholder="Password" />
-                <span className="toggle-password" onClick={() => setShowPassword(!showPassword)}>
-                    {/* {showPassword? <FaEyeSlash /> : <FaEye />} */}
-                </span>
-                <input type={showPassword ? "text" : "password"} placeholder="Confirm Password" onChange={(e) => setPassword(e.target.value)}/>
+                <input type={showPassword ? "text" : "password"} placeholder="Password" onChange={(e) => setPassword(e.target.value)}/>
                 {showPassword ? <FaEyeSlash onClick={() => {setShowPassword(!showPassword)}} /> : <FaEye onClick={() => {setShowPassword(!showPassword)}} />}
-                
               </div>
 
               <div className="login-center-options">
@@ -65,10 +90,11 @@ const Login = () => {
                 </Link>
               </div>
               <div className="login-center-buttons">
-                <Link to="/home">
-                  <button type="button" className='button-google'>G+ Google</button>
-                </Link>
                 <button type="submit" className='button-login'>Login</button>
+                <button type="button" className='button-google'>
+                  {/* <img src={GoogleSvg} alt="" /> */}
+                  G+ Google
+                </button>
               </div>
             </form>
           </div>
@@ -77,7 +103,7 @@ const Login = () => {
             Não tem uma conta? <Link to="/register">Registrar-se</Link>
           </p>
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 };

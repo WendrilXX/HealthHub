@@ -1,16 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300&display=swap');
 
-body {
+/* body {
     font-family: 'Roboto', sans-serif;
     background-color: #ADD8E6;
-}
+} */
 
 h2, h3, p {
     font-family: 'Open Sans', sans-serif;
 }
 
-.login-right {
-    background: #f2f2f2;
+.login-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 38%;
+    background-color: yellow;
+}
+
+.login-right-container {
+    background: var(--clr-bcg);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -21,6 +29,7 @@ h2, h3, p {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    background-color: #e4f2ff;
 }
 input[type="text"], input[type="password"], input[type="email"] {
     width: 90%;
@@ -65,7 +74,7 @@ input[type="checkbox"] {
     display: flex;
     justify-content: center; /* Centraliza os botões horizontalmente */
     align-items: center; /* Centraliza os botões verticalmente */
-    gap: 10px; /* Adiciona algum espaço entre os botões */
+    /* gap: 10px; Adiciona algum espaço entre os botões */
 }
 
 button {
@@ -81,20 +90,18 @@ button {
 }
 .button-login {
     background-color: #007bff; /* Azul mais escuro */
-    color: white;
+    color: #e4f2ff;
     border: none;
     border-radius: 5px; /* Bordas arredondadas */
     padding: 10px 20px; /* Espaçamento interno */
     margin-right: 10px; /* Espaçamento entre botões */
-    margin-right: 10px;
-    
-    
 }
 .button-google{
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
     background-color: rgb(249, 62, 62);
+    color: #e4f2ff;
 }
 
 button:hover {
@@ -116,8 +123,8 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ADD8E6;
-    min-height: 100vh; /* Garante que ocupe pelo menos a altura total da viewport */
+    /* background-color: #fd1100; */
+    /*min-height: 100vh;  Garante que ocupe pelo menos a altura total da viewport */
 }
 .pass-input-div {
     position: relative;
@@ -125,7 +132,7 @@ button:hover {
 
 .toggle-password {
     position: absolute;
-    right: 40px; /* Ajuste conforme necessário */
+    right: 20px; /* Ajuste conforme necessário */
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
@@ -133,6 +140,8 @@ button:hover {
 }
 
 /* Estilize o campo de entrada conforme necessário */
-input[type="password"] {
-    padding-right: 30px; /* Aumenta o tamanho do campo de entrada para acomodar o ícone */
-}
+/* input[type="password"] {
+    padding-right: 30px; /* Aumenta o tamanho do campo de entrada para acomodar o ícone */ 
+
+
+    

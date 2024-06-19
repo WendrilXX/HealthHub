@@ -1,0 +1,51 @@
+/* Não apagar */
+/* isso aqui remove as bordas da tela  */
+html, body, #root{
+    height: 100%;
+    width: 100%;
+
+}
+body {
+    background: var(--clr-bcg);
+    font-family: 'Roboto', sans-serif;
+    /* background-color: #e3f4ff; */
+}
+
+.toggler,
+.toggler:focus,
+.toggler:visited {
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 500px) {
+  .toggler {
+    position: relative;
+    right: 15px;
+  }
+  .nav-center h1 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 320px) {
+  .toggler {
+    position: relative;
+    right: 10px;
+  }
+  .nav-center h1 {
+    font-size: 2rem;
+  }
+}
+
+.dark-theme {
+    --clr-bcg: #282c35;
+    --clr-font: #e3f4ff;
+    --clr-primary: #ffa7c4;
+  }
+  
+  .light-theme {
+    --clr-bcg: #e3f4ff;
+    --clr-font: #282c35;
+    --clr-primary: #d23669;
+  }
