@@ -13,7 +13,7 @@ const Header = () => {
     return(
         <div className='body-header'>
 
-            <h1 className='titulo-header'>HealthHub</h1>
+            <h1 className='titulo-header' onClick={() => {window.location.href = '/home'}}>HealthHub</h1>
 
             <img src="../src/assets/Profile-circle.png" className='img-user' onClick={() => {window.location.href = '/perfil'}}/>
             <img src="../src/assets/mao.png" className='img-mao'/>
@@ -24,7 +24,9 @@ const Header = () => {
                  <Botao className='botoes-div-header' propButton='Recursos'/> 
                  <Botao className='botoes-div-header' propButton='Profissional'/> 
                  <Botao className='botoes-div-header' propButton='Grupos'/>
-                 <Botao className='botoes-div-header' propButton='Consultas'/>  
+                 <Botao className='botoes-div-header' propButton='Consultas'/> 
+                 <Botao className='botoes-div-header' propButton='Suporte'/> 
+                 <Botao className='botoes-div-header' propButton='Anotações'/> 
             </div>
 
             {/*

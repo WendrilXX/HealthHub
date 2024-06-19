@@ -30,7 +30,7 @@ const RoutesApp = () => {
     <Router>
         <Routes>
           {/* <Route path="/home" element={<Private Item={App} />} /> */}
-          <Route path="/" exact element={<Login />} />
+          <Route path="/" exact element={<Register />} />
           <Route path="/home" exact element={<Home/>} />
           <Route path="/login" exact element={<Login />} />
           <Route path="/recursos" exact element={<Recursos/>}/>  
@@ -40,7 +40,7 @@ const RoutesApp = () => {
           <Route path="/Consultas" exact element={<Consultas_ON />} />
           <Route path="/grupos" exact element={<Grupos />} />
           <Route path="/perfil" exact element={<Perfil/>}/>
-          <Route path="/anotacoes" exact element={<Anotacoes/>}/>
+          <Route path="/anotações" exact element={<Anotacoes/>}/>
           <Route path="/suporte" exact element={<SuporteForm/>} />
         </Routes>
     </Router>
