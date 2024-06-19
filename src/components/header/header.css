@@ -19,6 +19,7 @@
     position: relative;
     bottom: 90px;
     align-items: center;
+    cursor: pointer;
 }
 .img-mao{
     width: 80px;
@@ -69,6 +70,7 @@
    font-size: 40px; 
     color: #0a2e47;
     padding-left: 40px;
+    cursor: pointer;
 }
 /* .botao-div-heaader2{
     margin: 0;
@@ -83,4 +85,5 @@
     margin-right: 17px;
     bottom: 245px;
     align-items: center;
+    cursor: pointer;
 }
