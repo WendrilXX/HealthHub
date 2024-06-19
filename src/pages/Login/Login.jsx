@@ -65,7 +65,7 @@ const Login = () => {
   return (
     <div className="login-main">
       
-      <div className="login-right">
+      {/* <div className="login-right"> */}
       {/* <DarkModeToggle
             className='toggler'
             size={50}
@@ -113,7 +113,7 @@ const Login = () => {
             Não tem uma conta? <Link to="/register">Registrar-se</Link>
           </p>
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 };
