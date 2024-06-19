@@ -16,6 +16,7 @@ class Perfil extends Component{
         const senha = localStorage.getItem("password");
         
         if(!email || !senha){
+            alert("Para acessar a página de login é necessário estar logado.");
             window.location.href = "/login";
             return;
         }

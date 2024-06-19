@@ -3,15 +3,21 @@ import Botao from '../botao/Botao';
 import './header.css'
 import { Route } from 'react-router-dom';
 // import CampoPesquisa from './pesquisa/pesquisa';
-function Header(){
+const Header = () => {
+    const handleClearClick = () => {
+        localStorage.clear();
+        window.location.href = '/login';
+    }
+
+
     return(
         <div className='body-header'>
 
             <h1 className='titulo-header'>HealthHub</h1>
 
-            <img src="../src/assets/Profile-circle.png" className='img-user'/>
+            <img src="../src/assets/Profile-circle.png" className='img-user' onClick={() => {window.location.href = '/perfil'}}/>
             <img src="../src/assets/mao.png" className='img-mao'/>
-            <img src="../src/assets/sair-header.png" alt="sair"className='img-sair' />
+            <img src="../src/assets/sair-header.png" alt="sair"className='img-sair' onClick={handleClearClick}/>
 
             <div className='botoes-header'>
                 {/* <Botao className='botoes-div-header' propButton='Home'/> */}
@@ -28,6 +34,6 @@ function Header(){
           
         </div>
     )
-    
 }
+ 
 export default Header;
