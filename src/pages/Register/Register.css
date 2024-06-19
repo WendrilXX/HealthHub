@@ -63,9 +63,11 @@ input[type="checkbox"] {
 
 .login-center-buttons {
     display: flex;
-    justify-content: center; /* Centraliza os botões horizontalmente */
+    justify-content: center; /* Distribui os botões uniformemente no container */
     align-items: center; /* Centraliza os botões verticalmente */
-    gap: 10px; /* Adiciona algum espaço entre os botões */
+    width: 100%; /* Garante que o container ocupe toda a largura disponível */
+    padding: 0 10px; /* Adiciona alguma margem interna para evitar que os botões fiquem muito próximos dos bordas */
+    margin-left: 0px; /* Adiciona uma margem à esquerda ao contêiner */
 }
 
 button {
@@ -79,13 +81,12 @@ button {
     height: 40px;
     width: 120px;
 }
-.button-register {
+.button-register,.button-google-register {
     background-color: #007bff; /* Azul mais escuro */
     color: white;
     border: none;
     border-radius: 5px; /* Bordas arredondadas */
     padding: 10px 20px; /* Espaçamento interno */
-    margin-right: 10px; /* Espaçamento entre botões */
 }
 .button-google-register{
     justify-content: center;
@@ -131,3 +132,13 @@ button:hover {
     z-index: 1; /* Certifique-se de que o ícone esteja acima do texto do campo de entrada */
 }
 /* Estilize o campo de entrada conforme necessário */
+
+.button-register,.button-google-register {
+    margin-left: 20px; /* Adiciona uma margem à esquerda aos botões */
+    margin-right: 10px; /* Mantém o espaçamento entre os botões */
+}
+
+/* Para o último botão, remova a margem à direita */
+.button-google-register:last-child {
+    margin-right: 0;
+}
