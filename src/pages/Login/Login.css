@@ -74,7 +74,7 @@ input[type="checkbox"] {
     display: flex;
     justify-content: center; /* Centraliza os botões horizontalmente */
     align-items: center; /* Centraliza os botões verticalmente */
-    gap: 10px; /* Adiciona algum espaço entre os botões */
+    /* gap: 10px; Adiciona algum espaço entre os botões */
 }
 
 button {
@@ -90,7 +90,7 @@ button {
 }
 .button-login {
     background-color: #007bff; /* Azul mais escuro */
-    color: white;
+    color: #e4f2ff;
     border: none;
     border-radius: 5px; /* Bordas arredondadas */
     padding: 10px 20px; /* Espaçamento interno */
@@ -101,6 +101,7 @@ button {
     align-items: center;
     padding: 10px 20px;
     background-color: rgb(249, 62, 62);
+    color: #e4f2ff;
 }
 
 button:hover {

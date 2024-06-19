@@ -31,7 +31,7 @@ const Register = () => {
 
   return (
     <div className="login-main">
-      <div className="login-right">
+      {/* <div className="login-right"> */}
         <div className="login-right-container">
           <div className="login-logo">
             <img src={Logo} alt="" />
@@ -68,7 +68,7 @@ const Register = () => {
             Já tem uma conta? <Link to="/login">Login</Link>
           </p>
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 };
