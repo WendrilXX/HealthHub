@@ -36,6 +36,7 @@ export const Anotacoes = () => {
     }
 
     return(
+        
         <div className='notesPage'>
             
             <h1 >Anotações Diárias</h1>
