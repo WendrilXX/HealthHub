@@ -1,11 +1,11 @@
 .div-body{
-    /*background-color: #e3e2df; */
-    
+    background: var(--clr-bcg);
     height: 100vh;
 }
 .img-autismo{
     margin-top: 50px;
     width: 60%;
+    height: 80%;
 }
 .imagem{
     margin-top: 40px;
@@ -14,11 +14,12 @@
     justify-content: center;
 }
 
-.corpo{
+.card-abordagem{
     flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 150px 40px 90px 40px;
 }	
 
 

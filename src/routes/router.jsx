@@ -12,7 +12,7 @@ import Consultas_ON from "../pages/Consultas/Consultas";
 import Perfil from "../pages/Perfil/index";
 import { Anotacoes } from "../pages/Anotacoes";
 import SuporteForm from "../pages/Suporte";
-
+import Feedback from "../pages/Feedback/Feedback";
 
 //  isso aqui chama a função de autenticaç]ao do usuario 
 //  pra saber se o fih duma egua ta logado, ou já fez login 
@@ -30,7 +30,7 @@ const RoutesApp = () => {
     <Router>
         <Routes>
           {/* <Route path="/home" element={<Private Item={App} />} /> */}
-          <Route path="/" exact element={<Login />} />
+          <Route path="/" exact element={<Register />} />
           <Route path="/home" exact element={<Home/>} />
           <Route path="/login" exact element={<Login />} />
           <Route path="/recursos" exact element={<Recursos/>}/>  
@@ -40,8 +40,9 @@ const RoutesApp = () => {
           <Route path="/Consultas" exact element={<Consultas_ON />} />
           <Route path="/grupos" exact element={<Grupos />} />
           <Route path="/perfil" exact element={<Perfil/>}/>
-          <Route path="/anotacoes" exact element={<Anotacoes/>}/>
+          <Route path="/anotações" exact element={<Anotacoes/>}/>
           <Route path="/suporte" exact element={<SuporteForm/>} />
+          <Route path="/feedback" exact element={<Feedback/>} />
         </Routes>
     </Router>
   );

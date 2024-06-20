@@ -6,7 +6,7 @@
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #e3f4ff;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
@@ -17,8 +17,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    background-color: yellow;
-    
+    background-color: #e3f4ff;
   } 
   
   button {
@@ -46,6 +45,7 @@
     align-items: center;
     flex-direction: column;
     margin-top: 20px;
+    background-color: #e3f4ff;
   }
   
   .section-h2-btn h2 {
@@ -65,7 +65,7 @@
   
   /* Estilos para o formulário de consulta */
   .formulario-consulta {
-    background-color: #fff;
+    background-color: #e3f4ff;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;

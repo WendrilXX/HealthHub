@@ -1,11 +1,13 @@
 .button {
-    width: 100%;
-    background-color: #007bff; /* Cor principal do Bootstrap */
+    width: 500px;
+    background-color: #4281ac; /* Cor principal do Bootstrap */
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px; /* Adiciona borda arredondada */
+    margin-bottom: 40px; /* Adiciona espaço entre os botões */
+    margin-top: 40px;
 }
 
 .button:disabled {

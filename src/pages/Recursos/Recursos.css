@@ -2,20 +2,21 @@
 .container1 {
   min-height: 100vh; /* O contêiner terá pelo menos a altura da viewport */
   height: auto; /* Mas poderá crescer além disso se o conteúdo precisar */
-  background: #f9f9f9; /* Mudança de cor de fundo para algo mais claro */
+  background: #e3f4ff; /* Mudança de cor de fundo para algo mais claro */
   max-width: 1200px;
   margin: 0 auto;
 }
 
 /* Estilos para o contêiner de botões */
 .button-container {
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   bottom: 50px; /* Distância máxima que os botões podem descer */
   z-index: 1000; /* Garante que os botões fiquem acima de outros elementos */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
 }
 
 /* Estilos para o contêiner de pesquisa */
@@ -26,13 +27,22 @@
 /* Estilos para o título dentro do contêiner de pesquisa */
 .search-container h1 {
   margin-bottom: 30px;
+  color: #0a2e47;
+  font-size: 40px;
+  
 }
 .posts {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; /* Espaçamento horizontal */
   align-items: stretch; /* Ajusta os itens para preencher a altura do contêiner */
-  padding-top: 60px; /* Altura dos botões */
+  /* padding-top: 60px; Altura dos botões */
+}
+
+.text-input{
+  width: 100%;
+  border-radius: 5px;
+  border: 15px solid #0a2e47;
 }
 
 /* Estilos para o contêiner de posts */

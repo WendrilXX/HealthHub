@@ -71,10 +71,6 @@ class Recursos extends Component{
             {/* <h2>Carregar mais</h2> */}
           </div>
           {/* <div>{<Widget/>}</div> */}
-=======
-
-            <h2>Carregar mais</h2>
-          <div>{<Widget/>}</div>
 
 
         </>

@@ -36,8 +36,10 @@ export const Anotacoes = () => {
     }
 
     return(
+        
         <div className='notesPage'>
-            <h1>Anotações Diárias</h1>
+            
+            <h1 >Anotações Diárias</h1>
             <div className='anotacoesDiv'>
                 {notes.map((note, index) => { // Faz-se o map para exibir cada nota 
                     return(

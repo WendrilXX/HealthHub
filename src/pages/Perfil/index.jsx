@@ -1,6 +1,7 @@
 import "./styles.css";
 import { Component } from 'react';
 import { ProfileForm } from "../../components/ProfileForm";
+import Header from "../../components/header/header";
 
 class Perfil extends Component{
     constructor(props){
@@ -16,6 +17,7 @@ class Perfil extends Component{
         const senha = localStorage.getItem("password");
         
         if(!email || !senha){
+            alert("Para acessar a página de login é necessário estar logado.");
             window.location.href = "/login";
             return;
         }
@@ -26,6 +28,7 @@ class Perfil extends Component{
 
         return(
             <div className="profilePage">
+                <Header/>
                 {!email || !senha ? (
                     <h1>Faça login para acessar a página do perfil</h1>
                 ) : (

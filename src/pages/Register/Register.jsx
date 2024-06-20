@@ -31,14 +31,14 @@ const Register = () => {
 
   return (
     <div className="login-main">
-      <div className="login-right">
+      {/* <div className="login-right"> */}
         <div className="login-right-container">
           <div className="login-logo">
             <img src={Logo} alt="" />
           </div>
           <div className="login-center">
             <h2>Registro</h2>
-            <p>É um prazer ter vc por aqui</p>
+            <p>É um prazer ter você por aqui</p>
             <form onSubmit={handleSubmit}>
               <input type="email" placeholder="Email" onChange={(e) => {setEmail(e.target.value)}}/>
               <div className="pass-input-div">
@@ -68,7 +68,7 @@ const Register = () => {
             Já tem uma conta? <Link to="/login">Login</Link>
           </p>
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 };

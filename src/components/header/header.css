@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: #0378A6;
+    align-items: center;
+    background-color: #e3f4ff;
     width: 100%;
     height: 120px;
     margin-top: 0;
@@ -10,7 +11,7 @@
     top: 0;
 }
 .img-user{
-    width: 60px;
+    width: 40px;
     display: flex;
     align-self: self-end;
     margin-right: 110px;
@@ -18,6 +19,7 @@
     position: relative;
     bottom: 90px;
     align-items: center;
+    cursor: pointer;
 }
 .img-mao{
     width: 80px;
@@ -33,24 +35,26 @@
     position: relative;
     bottom: 222px;
 }
-.botoes-header{
+ .botoes-header{
     display: flex;
     margin-left: 390px;
-    margin-right: 0;   
+    margin-right: 50px;   
     align-items: center;
+    justify-content: space-between;
     gap: 15px;
     position: absolute;
-    top: 265px;
-
+    top: 265px; 
+    /* background-color: black; */
+    
 }
 
-.botoes-div-header{
+/* .botoes-div-header{
     display: flex;
     flex-direction: row;
     margin-left: 0px;
     padding: 10px;
     
-}
+} */
   
 
 
@@ -65,13 +69,14 @@
    font-weight: 900;
    margin-left: 10px;
    font-size: 40px; 
-    color: #f2f2f2;
+    color: #0a2e47;
     padding-left: 40px;
+    cursor: pointer;
 }
-.botao-div-heaader2{
+/* .botao-div-heaader2{
     margin: 0;
     padding: 0;
-}
+} */
 .img-sair{
     width: 50px;
     display: flex;
@@ -81,4 +86,6 @@
     margin-right: 17px;
     bottom: 245px;
     align-items: center;
+    cursor: pointer;
+    
 }

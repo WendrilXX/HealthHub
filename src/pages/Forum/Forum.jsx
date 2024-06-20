@@ -10,10 +10,10 @@ function Forum(){
     <>
       <Header />
       <div className='body-forum'>
-        {<Widget />}
         <Conversa></Conversa>
+        {<Widget />}
       </div>
-    
+      
     </>
     
     
